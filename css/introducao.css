@@ -1,4 +1,5 @@
 .introducao img{
+  background-color: var(--background-second);
     border-radius: 20px;
     border: 2px solid var(--background-first);
     transition: 0.3s;
@@ -27,7 +28,7 @@
 
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     .introducao h1 {
       font-size: 3rem;
     }
@@ -36,7 +37,7 @@
       }
   }    
   
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     .introducao {
       grid-template-columns: 1fr;
     }

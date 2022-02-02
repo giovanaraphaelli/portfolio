@@ -1,5 +1,6 @@
 :root{
     --background-first:#21245B;
+    --background-second: #433D85;
     --yellow: #F2C48D;
     --font-first: #F2CEF2;
     --font-second:#F2F2F2;
@@ -33,10 +34,20 @@ img {
 
 .container {
   max-width: 1200px;
-  padding: 120px 20px;
+  min-height: 100vh;
+  padding: 0px 40px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+}
+
+@media (max-width: 650px){
+  .container{
+    grid-template-columns: 1fr;
+  min-height: initial;
+  padding: 150px 20px;
+  }
+  
 }
