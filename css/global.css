@@ -30,3 +30,13 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
