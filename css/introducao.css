@@ -1,11 +1,13 @@
-
+.introducao img{
+    border-radius: 10px;
+}
 
 .introducao-texto{
     line-height: 1.125; 
 }
 
 .introducao h1, p{
-    font-size: 4.5rem;    
+    font-size: 4.0rem;    
     color: var(--font-first);
     font-weight: 700;
   }
@@ -18,3 +20,22 @@
     font-size: 3rem;
 
   }
+
+  @media (max-width: 800px) {
+    .introducao h1 {
+      font-size: 3rem;
+    }
+    .introducao p {
+        font-size: 2rem;
+      }
+  }    
+  
+  @media (max-width: 600px) {
+    .introducao {
+      grid-template-columns: 1fr;
+    }
+    .introducao img {
+      display: none;
+    }
+  }
+  
