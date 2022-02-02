@@ -47,7 +47,8 @@ img {
   .container{
     grid-template-columns: 1fr;
   min-height: initial;
-  padding: 150px 20px;
+  padding: 20px 20px;
+  margin-top: 150px;
   }
   
 }

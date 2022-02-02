@@ -5,7 +5,7 @@
 
 .sobre p{
     font-size: 1.5rem;
-    line-height: 1.75;
+    line-height: 1.5;
    font-weight: 400;
    text-align: right;
    
@@ -18,20 +18,20 @@
 }
 
 .sobre img:hover{
-    border: 2px solid var(--yellow)
+    border: 2px solid var(--yellow);
 }
 
 .sobre-wrapper{
     display: grid;
     gap: 20px;
     grid-template-columns: 2fr 1fr;
+    gap: 100px;
     align-items: center;
     position: relative;
 }
 
 .sobre-subtitulo{
-    font-size: 1.5rem;
-    padding-left: 70px;
+    font-size: 2rem;
     color: var(--yellow);
     grid-column: 1 /-1;
     text-transform: uppercase;
@@ -45,7 +45,7 @@
     height: 2px;
     position: absolute;
     top: 15px;
-    left: 250px;
+    left: 255px;
     z-index: -1;
     background-color: var(--yellow);
     
@@ -59,6 +59,10 @@
     }
     .sobre-wrapper img{
         max-width: 50%;
+        border: 2px solid var(--yellow)
+    }
+    .sobre-subtitulo{
+        font-size: 1.5rem,;
     }
     .sobre-subtitulo::after{
         display: none;
