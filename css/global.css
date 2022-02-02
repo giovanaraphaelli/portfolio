@@ -10,7 +10,7 @@
 body {
     font-family: 'Archivo', sans-serif;;
     margin: 0px;
-    color: var(--font-second);
+    color: var(--font-first);
     background-color: var(--background-first);
   }
 

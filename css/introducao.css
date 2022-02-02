@@ -19,8 +19,10 @@
     font-weight: 700;
   }
 
-  .introducao span{
-      color: var(--yellow);
+
+
+  .texto-second{
+    color: var(--yellow);
   }
 
   .introducao p {

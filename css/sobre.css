@@ -51,7 +51,7 @@
     
   }
 
-  @media (max-width: 650px){
+  @media (max-width: 800px){
     .sobre-wrapper{
         justify-items: center;
         grid-template-columns: 1fr;
@@ -62,7 +62,7 @@
         border: 2px solid var(--yellow)
     }
     .sobre-subtitulo{
-        font-size: 1.5rem,;
+        font-size: 1.5rem;
     }
     .sobre-subtitulo::after{
         display: none;
