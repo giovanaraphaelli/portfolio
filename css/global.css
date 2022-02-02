@@ -1,0 +1,32 @@
+:root{
+    --pink: #F2CEF2;
+    --blue:#21245B;
+    --yellow: #F2C48D;
+    --white:#F2F2F2;
+
+}
+
+body {
+    font-family: 'Archivo', sans-serif;;
+    margin: 0px;
+    color: white;
+    background-color: var(--blue);
+  }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
