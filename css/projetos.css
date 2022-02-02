@@ -1,16 +1,10 @@
-.projetos-container{
-    max-width: 1200px;
-  /* min-height: 100vh; */
-  padding: 0px 40px;
-  margin: 0 auto;
-  margin-bottom: 200px;
-  align-items: center;
-}
+
 
 .projetos-wrapper{
     display: grid;    
     gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 /-1;
     align-items: center;
     position: relative;
 }
@@ -66,8 +60,6 @@
 
 @media (max-width: 800px){
     .projetos-wrapper{
-        margin-top: 180px;
-        padding-top: 20px;
         grid-template-columns: 1fr;
         gap: 50px;
     }

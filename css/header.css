@@ -66,8 +66,8 @@
 }
 
 @media (max-width: 800px) {
-    .header {
-      flex-direction: column;
+    .header {flex-direction: column;
+      
       padding: 20px;
       position: initial;
     }

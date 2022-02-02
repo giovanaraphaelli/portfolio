@@ -1,5 +1,6 @@
 @import "./global.css";
 @import "./header.css";
 @import url("./introducao.css");
-@import url(./sobre.css);
-@import url(./projetos.css);
+@import url("./sobre.css");
+@import url("./projetos.css");
+@import url("./conhecimentos.css");

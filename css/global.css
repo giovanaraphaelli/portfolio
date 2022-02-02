@@ -10,6 +10,7 @@
 body {
     font-family: 'Archivo', sans-serif;;
     margin: 0px;
+    margin-top: 85px;
     color: var(--font-first);
     background-color: var(--background-first);
   }
@@ -34,14 +35,20 @@ img {
 
 .container {
   max-width: 1200px;
-  min-height: 100vh;
-  padding: 0px 40px;
+  /* min-height: 100vh; */
+  padding: 170px 40px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
 }
+
+  @media (max-width: 800px){
+  body{
+    margin-top: 0px;}
+  }
+
 
 @media (max-width: 650px){
   .container{
@@ -50,5 +57,7 @@ img {
   padding: 20px 20px;
   margin-top: 150px;
   }
+
+ 
   
 }

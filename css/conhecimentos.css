@@ -1,0 +1,54 @@
+.conhecimentos{
+    position: relative;
+    gap: 5px;    
+}
+
+.conhecimento-icons img{
+    background-color: var(--background-second);
+    width: 156px;
+    border-radius: 20px;
+    border: 3px solid var(--background-first);
+    transition: .3s;
+}
+
+.conhecimento-icons img:hover{
+    border: 3px solid var(--yellow);
+}
+
+.conhecimentos-titulo{
+    font-size: 2rem;
+    color: var(--yellow);
+    grid-column: 1 /-1;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 120px;
+}
+
+.conhecimentos-titulo::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    top: 175px;
+    left: 345px;
+    z-index: -1;
+    background-color: var(--yellow);   
+} 
+
+.conhecimentos-wrapper{
+    grid-column: 2 /3; 
+    
+}
+
+.conhecimento-icons{    
+    display: flex;
+    gap: 5px;
+    justify-content: space-around
+}
+
+@media (max-width: 800px){
+    .conhecimentos-wrapper{    
+        grid-column: 1 /-1;
+    }
+}
