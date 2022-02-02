@@ -3,10 +3,25 @@
     padding: 20px 20px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     /* border-bottom: 0.3px solid var(--yellow); */
     
+  }
+
+  .header-logo{
+    color: var(--yellow);
+    display: block;
+    padding: 5px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-bottom: 3px solid var(--background-first);
+    text-decoration: none;
+    transition: o.3s;
+  }
+
+  .header-logo:hover{
+    border-bottom: 3px solid var(--yellow);
   }
 
   .header-menu {
@@ -21,7 +36,7 @@
     text-transform: uppercase;
     padding: 10px ;
     text-decoration: none;
-    color: var(--pink);
+    color: var(--font-first);
     display: block;
     transition: 0.3s;
 }
@@ -34,13 +49,13 @@
 #header-btn{
     color: var(--yellow);
     font-weight: 700;
-    background-color: var(--blue);
+    background-color: var(--background-first);
     border: 1px solid var(--yellow);
     border-radius: 5px;
 }
 
 #header-btn:hover{
-    color: var(--blue);
+    color: var(--background-first);
     background-color: var(--yellow);
 }
 

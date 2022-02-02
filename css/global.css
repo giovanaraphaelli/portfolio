@@ -1,16 +1,16 @@
 :root{
-    --pink: #F2CEF2;
-    --blue:#21245B;
+    --background-first:#21245B;
     --yellow: #F2C48D;
-    --white:#F2F2F2;
+    --font-first: #F2CEF2;
+    --font-second:#F2F2F2;
 
 }
 
 body {
     font-family: 'Archivo', sans-serif;;
     margin: 0px;
-    color: white;
-    background-color: var(--blue);
+    color: var(--font-second);
+    background-color: var(--background-first);
   }
 
 h1,
