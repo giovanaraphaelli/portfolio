@@ -40,7 +40,9 @@
   }    
   
   @media (max-width: 650px) {
+    
     .introducao {
+      padding: 100px 20px;
       grid-template-columns: 1fr;
     }
     .introducao img {

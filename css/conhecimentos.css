@@ -49,7 +49,7 @@
     justify-content: space-around
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .conhecimentos-wrapper{    
         grid-column: 1/-1;
     }
