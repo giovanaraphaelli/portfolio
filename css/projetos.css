@@ -20,11 +20,11 @@
 .projetos-subtitulo::after{
     content: "";
     display: block;
-    width: 270px;
+    width: 300px;
     height: 2px;
     position: absolute;
     top: 15px;
-    left: 235px;
+    left: 200px;
     z-index: -1;
     background-color: var(--yellow);    
   }
@@ -36,7 +36,7 @@
     gap: 10px;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid var(--background-first);
+    border: 3px solid var(--background-first);
     transition: 0.3s;
 }
 .projetos-box h3{
@@ -46,7 +46,7 @@
 
 
 .projetos-box:hover{
-    border: 2px solid var(--yellow);
+    border: 3px solid var(--yellow);
 }
 
 .projetos-box p{
@@ -64,7 +64,7 @@
         gap: 50px;
     }
     .projetos-box{
-        border: 2px solid var(--yellow)}
+        border: 3px solid var(--yellow)}
 
     .projetos-subtitulo{
         font-size: 1.5rem;

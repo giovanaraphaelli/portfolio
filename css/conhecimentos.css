@@ -3,6 +3,7 @@
     gap: 5px;    
 }
 
+
 .conhecimento-icons img{
     background-color: var(--background-second);
     width: 156px;
@@ -30,14 +31,15 @@
     width: 200px;
     height: 2px;
     position: absolute;
-    top: 175px;
+    top: 185px;
     left: 345px;
     z-index: -1;
     background-color: var(--yellow);   
 } 
 
 .conhecimentos-wrapper{
-    grid-column: 2 /3; 
+    grid-column: 2/3; 
+    padding-bottom: 50px;
     
 }
 
@@ -49,6 +51,29 @@
 
 @media (max-width: 800px){
     .conhecimentos-wrapper{    
-        grid-column: 1 /-1;
+        grid-column: 1/-1;
+    }
+
+    .conhecimentos-titulo{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .conhecimentos-titulo::after{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .conhecimento-icons{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 140px;
+        
+    }
+
+    .conhecimento-icons img{
+        border: 3px solid var(--yellow);
+        margin-bottom: 20px;
     }
 }

@@ -38,6 +38,7 @@
   }
 
   .header-menu a {
+    font-size: 1.125rem;
     line-height: 1.3;
     text-transform: uppercase;
     padding: 10px ;
@@ -56,7 +57,7 @@
     color: var(--yellow);
     font-weight: 700;
     background-color: var(--background-first);
-    border: 1px solid var(--yellow);
+    border: 3px solid var(--yellow);
     border-radius: 5px;
 }
 

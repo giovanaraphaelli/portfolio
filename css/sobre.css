@@ -13,12 +13,12 @@
 .sobre img{
     border-radius: 50%;
     background-color: var(--background-second);
-    border: 2px solid var(--background-second);
+    border: 3px solid var(--background-second);
     transition: 0.3s;
 }
 
 .sobre img:hover{
-    border: 2px solid var(--yellow);
+    border: 3px solid var(--yellow);
 }
 
 .sobre-wrapper{
@@ -59,7 +59,7 @@
     }
     .sobre-wrapper img{
         max-width: 50%;
-        border: 2px solid var(--yellow)
+        border: 3px solid var(--yellow)
     }
     .sobre-subtitulo{
         font-size: 1.5rem;

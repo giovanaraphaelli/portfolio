@@ -1,12 +1,12 @@
 .introducao img{
   background-color: var(--background-second);
     border-radius: 20px;
-    border: 2px solid var(--background-first);
+    border: 3px solid var(--background-first);
     transition: 0.3s;
 }
 
 .introducao img:hover{
-    border: 2px solid var(--yellow);
+    border: 3px solid var(--yellow);
 }
 
 .introducao-texto{
