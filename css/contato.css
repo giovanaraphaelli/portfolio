@@ -94,3 +94,11 @@
         display: none;
     }
 }
+
+@media (max-width: 600px){
+
+    .contato-container p, a {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+}
