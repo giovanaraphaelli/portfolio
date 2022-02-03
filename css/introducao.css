@@ -18,7 +18,7 @@
 }
 
 .introducao h1, p{
-    font-size: 5.0rem;    
+    font-size: 4.5rem;    
     color: var(--font-first);
     font-weight: 700;
   }
