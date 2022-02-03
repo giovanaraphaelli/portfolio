@@ -104,7 +104,7 @@
 
 @media (max-width: 500px){
     .conhecimentos-wrapper{
-        gap: 10px;
+        gap: 20px;
         grid-template-columns: 1fr 1fr;
         margin: 20px;
     }
