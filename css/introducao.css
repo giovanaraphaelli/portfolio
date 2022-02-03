@@ -18,31 +18,30 @@
 }
 
 .introducao h1, p{
-    font-size: 4.5rem;    
+    font-size: 4.0rem;    
     color: var(--font-first);
     font-weight: 700;
   }
-
 
   .texto-second{
     color: var(--yellow);
   }
 
   .introducao p {
-    font-size: 3rem;
+    font-size: 2rem;
 
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1050px) {
     .introducao h1 {
-      font-size: 3.5rem;
+      font-size: 3.0rem;
     }
     .introducao p {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
-  }    
+  }  
   
-  @media (max-width: 650px) {
+  @media (max-width: 660px) {
     
     .introducao {
       padding: 100px 20px;

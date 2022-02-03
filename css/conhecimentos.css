@@ -3,6 +3,11 @@
     gap: 5px;    
 }
 
+.conhecimento-icons{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .conhecimento-icons img{
     background-color: var(--background-second);
@@ -15,6 +20,20 @@
 .conhecimento-icons img:hover{
     border: 3px solid var(--yellow);
 }
+
+.conhecimento-icons-texto{
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.conhecimento-icons-texto h4{
+    font-size: 1.125em;
+    display: block;
+    width: 162px ;
+    text-align: center;
+}
+
 
 .conhecimentos-titulo{
     font-size: 2rem;
@@ -38,9 +57,7 @@
 } 
 
 .conhecimentos-wrapper{
-    grid-column: 2/3; 
-    padding-bottom: 50px;
-    
+    grid-column: 2/3;     
 }
 
 .conhecimento-icons{    
@@ -62,24 +79,42 @@
     .conhecimentos-titulo::after{
         display: none;
     }
+    .conhecimentos-wrapper{
+        padding-bottom: 50px;
+    }
 }
 
-@media (max-width: 700px){
-    .conhecimento-icons{
-        padding-bottom: 140px;
-        
-    }
+@media (max-width: 750px){
 
+  
     .conhecimento-icons img{
         border: 3px solid var(--yellow);
-        margin-bottom: 20px;
         width: 100px;
     }
+    .conhecimento-icons-texto h4{
+        font-size:0.75rem;
+        width: 100px ;
+    }
 
-    @media (max-width: 500px){
-        .conhecimento-icons img{
-            width: 70px;
-            
-        } 
+}
+
+@media (max-width: 650px){ 
+    /* .conhecimento-icons img{   
+    width: 80px;            
+    } 
+    .conhecimento-icons-texto h4{
+    width: 80px;
+    } */
+    .conhecimentos-wrapper{
+        padding-bottom: 120px;
     }
 }
+
+ @media (max-width: 500px){
+      .conhecimento-icons img{   
+    width: 70px;            
+    } 
+    .conhecimento-icons-texto h4{
+    width: 70px;
+    }
+ }   

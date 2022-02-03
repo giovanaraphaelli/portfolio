@@ -58,7 +58,7 @@
         gap: 50px;
     }
     .sobre-wrapper img{
-        max-width: 50%;
+        max-width: 30%;
         border: 3px solid var(--yellow)
     }
     .sobre-subtitulo{
