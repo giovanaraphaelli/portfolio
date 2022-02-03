@@ -66,7 +66,7 @@
     padding-right: 10px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .contato-wrapper{    
         grid-template-columns: 1fr;
         justify-content:center;

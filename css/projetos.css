@@ -58,7 +58,7 @@
     width: 36px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .projetos-wrapper{
         grid-template-columns: 1fr;
         gap: 50px;
