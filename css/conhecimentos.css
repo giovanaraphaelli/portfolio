@@ -5,13 +5,13 @@
 
 .conhecimento-icons{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;   
 }
 
 
 .conhecimento-icons img{
     background-color: var(--background-second);
-    width: 156px;
+    /* width: 156px; */
     border-radius: 20px;
     border: 3px solid var(--background-first);
     transition: .3s;
@@ -22,15 +22,12 @@
 }
 
 .conhecimento-icons-texto{
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .conhecimento-icons-texto h4{
     font-size: 1.125em;
-    display: block;
-    width: 162px ;
     text-align: center;
 }
 
@@ -57,14 +54,13 @@
 } 
 
 .conhecimentos-wrapper{
-    grid-column: 2/3;     
+    grid-column: 2/3;   
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content:center;  
 }
 
-.conhecimento-icons{    
-    display: flex;
-    gap: 5px;
-    justify-content: space-around
-}
 
 @media (max-width: 1000px){
     .conhecimentos-wrapper{    
@@ -79,17 +75,18 @@
     .conhecimentos-titulo::after{
         display: none;
     }
-    .conhecimentos-wrapper{
-        padding-bottom: 50px;
-    }
+    
 }
 
 @media (max-width: 750px){
 
-  
+    .conhecimentos-wrapper{
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px;
+    }
     .conhecimento-icons img{
         border: 3px solid var(--yellow);
-        width: 100px;
     }
     .conhecimento-icons-texto h4{
         font-size:0.75rem;
@@ -98,23 +95,11 @@
 
 }
 
-@media (max-width: 650px){ 
-    /* .conhecimento-icons img{   
-    width: 80px;            
-    } 
-    .conhecimento-icons-texto h4{
-    width: 80px;
-    } */
+@media (max-width: 500px){
     .conhecimentos-wrapper{
-        padding-bottom: 120px;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
     }
 }
 
- @media (max-width: 500px){
-      .conhecimento-icons img{   
-    width: 70px;            
-    } 
-    .conhecimento-icons-texto h4{
-    width: 70px;
-    }
- }   
