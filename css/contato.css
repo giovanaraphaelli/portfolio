@@ -48,11 +48,6 @@
     text-align: left;
     text-decoration: underline;
     transition: .3s;
-    cursor: pointer;
-}
-
-.redes-icons-wrapper a:hover{
-    color:var(--yellow);
 }
 
 .redes-icon{

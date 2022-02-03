@@ -59,7 +59,6 @@
     }
     .sobre-wrapper img{
         max-width: 30%;
-        border: 3px solid var(--yellow)
     }
     .sobre-subtitulo{
         font-size: 1.5rem;
@@ -74,5 +73,11 @@
     }
     .sobre-texto{
         order: 3;
+    }
+  }
+
+  @media (max-width: 650px){
+    .sobre-wrapper img{
+        border: 3px solid var(--yellow)
     }
   }
