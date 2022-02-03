@@ -50,6 +50,10 @@
     transition: .3s;
 }
 
+.redes-icons-wrapper a:hover{
+    color: var(--yellow);
+}
+
 .redes-icon{
     display: flex;
     justify-content: start;
