@@ -2,7 +2,7 @@
 
 .projetos-wrapper{
     display: grid;    
-    gap: 40px;
+    gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1 /-1;
     align-items: center;
