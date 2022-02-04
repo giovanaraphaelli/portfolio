@@ -11,7 +11,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 40px;
   align-items: flex-start;
-  padding: 100px 20px;
+  padding: 100px 120px;
   position: relative;
  
 }
@@ -27,7 +27,7 @@
 .contato-titulo::after{
     content: "";
     display: block;
-    width: 250px;
+    width: 340px;
     height: 2px;
     position: absolute;
     top: 117px;
@@ -81,8 +81,8 @@
         font-size: 1.5rem;
         text-align: center;
         padding-bottom: 20px;
+        
     }
-
     .redes-icons-wrapper{
         text-align: center;
     }
@@ -108,4 +108,5 @@
         font-size: 1.125rem;
         text-align: center;
     }
+
 }
