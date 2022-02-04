@@ -11,7 +11,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 40px;
   align-items: flex-start;
-  padding: 100px 120px;
+  padding: 100px 50px;
   position: relative;
  
 }
@@ -31,7 +31,7 @@
     height: 2px;
     position: absolute;
     top: 117px;
-    left: 290px;
+    left: 220px;
    
     background-color: var(--yellow);    
 }

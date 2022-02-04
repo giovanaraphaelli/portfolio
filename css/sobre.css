@@ -78,6 +78,7 @@
 
   @media (max-width: 650px){
     .sobre-wrapper img{
-        border: 3px solid var(--yellow)
+        border: 3px solid var(--yellow);
+        max-width: 50%;
     }
   }

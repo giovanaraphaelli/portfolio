@@ -1,76 +1,70 @@
 .header {
   background-color: var(--background-first);
-    max-width: 1200px;
-    padding: 20px 20px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 99;
-    /* border-bottom: 0.3px solid var(--yellow); */
-    
-  }
-
-  .header-logo{
-    color: var(--yellow);
-    display: block;
-    padding: 5px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    border-bottom: 3px solid var(--background-first);
-    text-decoration: none;
-    transition: o.3s;
-  }
-
-  .header-logo:hover{
-    border-bottom: 3px solid var(--yellow);
-  }
-
-  .header-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .header-menu a {
-    font-size: 1.125rem;
-    line-height: 1.3;
-    text-transform: uppercase;
-    padding: 10px ;
-    text-decoration: none;
-    color: var(--font-first);
-    display: block;
-    transition: 0.3s;
+  max-width: 1200px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  /* border-bottom: 0.3px solid var(--yellow); */
 }
 
+.header-logo {
+  color: var(--yellow);
+  display: block;
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 3px solid var(--background-first);
+  text-decoration: none;
+  transition: o.3s;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.header-menu a {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--font-first);
+  display: block;
+  transition: 0.3s;
+}
 
 .header-menu a:hover {
-	color:var(--yellow);
-	}
-
-#header-btn{
-    color: var(--yellow);
-    font-weight: 700;
-    background-color: var(--background-first);
-    border: 3px solid var(--yellow);
-    border-radius: 5px;
+  color: var(--yellow);
 }
 
-#header-btn:hover{
-    color: var(--background-first);
-    background-color: var(--yellow);
+#header-btn {
+  color: var(--yellow);
+  font-weight: 700;
+  background-color: var(--background-first);
+  border: 3px solid var(--yellow);
+  border-radius: 5px;
+}
+
+#header-btn:hover {
+  color: var(--background-first);
+  background-color: var(--yellow);
 }
 
 @media (max-width: 1000px) {
-    .header {flex-direction: column;
-      
-      padding: 20px;
-      position: initial;
-    }
-    
+  .header {
+    flex-direction: column;
+
+    padding: 20px;
+    position: initial;
   }
+}
