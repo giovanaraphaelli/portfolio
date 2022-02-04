@@ -11,7 +11,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 40px;
   align-items: flex-start;
-  padding: 100px ;
+  padding: 100px 20px;
   position: relative;
  
 }
@@ -63,6 +63,13 @@
 .redes-icon img{
     width: 50px;
     padding-right: 10px;
+}
+
+.contato-logo{
+    color: var(--yellow);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 @media (max-width: 1000px){
