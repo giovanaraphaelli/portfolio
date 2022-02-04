@@ -21,6 +21,10 @@
     border: 3px solid var(--yellow);
 }
 
+.conhecimento-icons:hover{
+    color: var(--yellow);
+}
+
 .conhecimento-icons-texto{
     text-align: center;
     text-transform: uppercase;
