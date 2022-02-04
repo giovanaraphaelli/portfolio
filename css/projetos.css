@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.proj-icons a {
+  text-decoration: none;
+}
+
 .projetos-subtitulo {
   font-size: 2rem;
   color: var(--yellow);
