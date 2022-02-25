@@ -43,7 +43,7 @@ p {
 
 @media (max-width: 660px) {
   .introducao {
-    margin-top: 140px;
+    margin-top: 180px;
     padding: 100px 20px;
     grid-template-columns: 1fr;
   }
