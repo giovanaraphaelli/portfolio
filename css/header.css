@@ -1,5 +1,7 @@
-.header {
+#header {
   background-color: var(--background-first);
+  box-sizing: border-box;
+  height: 100px;
   max-width: 1200px;
   padding: 20px 20px;
   margin: 0 auto;
@@ -47,6 +49,10 @@
   color: var(--yellow);
 }
 
+#btn-mobile {
+  display: none;
+}
+
 #header-btn {
   color: var(--yellow);
   font-weight: 700;
@@ -60,11 +66,81 @@
   background-color: var(--yellow);
 }
 
-@media (max-width: 1000px) {
-  .header {
-    flex-direction: column;
-
-    padding: 20px;
-    position: initial;
+@media (max-width: 700px) {
+  #header {
+    position: relative;
   }
+
+  .header-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    right: 0;
+    display: block;
+    background-color: var(--background-second);
+    height: 0px;
+    transition: 0.6s;
+    z-index: 9999;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  .header-menu li {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  #nav.active .header-menu {
+    height: calc(100vh - 100px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #header-btn {
+    background-color: var(--background-second);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+    color: var(--yellow);
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  nav.active #hamburger {
+    border-top-color: transparent;
+  }
+}
+
+nav.active #hamburger::before {
+  transform: rotate(135deg);
+}
+
+nav.active #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
 }

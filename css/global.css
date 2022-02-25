@@ -1,19 +1,18 @@
-:root{
-    --background-first:#21245B;
-    --background-second: #433D85;
-    --yellow: #F2C48D;
-    --font-first: #F2CEF2;
-    --font-second:#F2F2F2;
-
+:root {
+  --background-first: #21245b;
+  --background-second: #433d85;
+  --yellow: #f2c48d;
+  --font-first: #f2cef2;
+  --font-second: #f2f2f2;
 }
 
 body {
-    font-family: 'Archivo', sans-serif;;
-    margin: 0px;
-    margin-top: 85px;
-    color: var(--font-first);
-    background-color: var(--background-first);
-  }
+  font-family: "Archivo", sans-serif;
+  margin: 0px;
+  margin-top: 85px;
+  color: var(--font-first);
+  background-color: var(--background-first);
+}
 
 h1,
 h2,
@@ -44,20 +43,17 @@ img {
   align-items: center;
 }
 
-  @media (max-width: 800px){
-  body{
-    margin-top: 0px;}
+@media (max-width: 800px) {
+  body {
+    margin-top: 0px;
   }
+}
 
-
-@media (max-width: 650px){
-  .container{
+@media (max-width: 650px) {
+  .container {
     grid-template-columns: 1fr;
-  min-height: initial;
-  padding: 20px 20px;
-  margin:150px 0;
+    min-height: initial;
+    padding: 20px 20px;
+    margin: 150px 0;
   }
-
- 
-  
 }
