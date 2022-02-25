@@ -67,10 +67,6 @@
 }
 
 @media (max-width: 700px) {
-  #header {
-    position: relative;
-  }
-
   .header-menu {
     display: block;
     position: absolute;
