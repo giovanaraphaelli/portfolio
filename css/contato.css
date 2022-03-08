@@ -36,7 +36,7 @@
     background-color: var(--yellow);    
 }
 
-.contato-container p, a{
+.contato-container p, #meuemail{
     font-size: 1.5rem;
     line-height: 1.5;
     font-weight: 400;

@@ -30,6 +30,12 @@
     position: relative;
 }
 
+.sobre-icons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
 .sobre-subtitulo{
     font-size: 2rem;
     color: var(--yellow);
