@@ -83,8 +83,14 @@
     overflow-y: auto;
   }
 
-  #header-btn {
+  .header-menu  #btn-principal {
+    color: var(--yellow);
     background-color: var(--background-second);
+  }
+
+  .header-menu #btn-principal:hover {
+    color: var(--background-first);
+    background-color: var(--yellow);
   }
 
   #btn-mobile {

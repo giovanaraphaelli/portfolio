@@ -66,7 +66,6 @@ img {
     margin-top: 0px;
   }
 }
-
 @media (max-width: 650px) {
   .container {
     grid-template-columns: 1fr;
