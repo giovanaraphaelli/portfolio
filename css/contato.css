@@ -57,6 +57,7 @@
 .redes-icon{
     display: flex;
     justify-content: start;
+    gap: 10px;
    
 }
 
