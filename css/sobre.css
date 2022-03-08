@@ -50,6 +50,15 @@
     background-color: var(--yellow);
     
   }
+  .sobre-texto{
+      display: grid;
+      grid-template-columns: auto;
+      gap: 20px;
+      align-content: end;
+      justify-content: end;
+      justify-items: end
+  }
+
 
   @media (max-width: 1000px){
     .sobre-wrapper{
@@ -72,6 +81,7 @@
         
     }
     .sobre-texto{
+        justify-items: center;
         order: 3;
     }
   }

@@ -43,6 +43,24 @@ img {
   align-items: center;
 }
 
+#btn-principal {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--yellow);
+  font-weight: 700;
+  background-color: var(--background-first);
+  border: 3px solid var(--yellow);
+  border-radius: 5px;
+}
+
+#btn-principal:hover {
+  color: var(--background-first);
+  background-color: var(--yellow);
+}
+
 @media (max-width: 800px) {
   body {
     margin-top: 0px;

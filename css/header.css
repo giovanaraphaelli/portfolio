@@ -53,18 +53,6 @@
   display: none;
 }
 
-#header-btn {
-  color: var(--yellow);
-  font-weight: 700;
-  background-color: var(--background-first);
-  border: 3px solid var(--yellow);
-  border-radius: 5px;
-}
-
-#header-btn:hover {
-  color: var(--background-first);
-  background-color: var(--yellow);
-}
 
 @media (max-width: 700px) {
   .header-menu {
