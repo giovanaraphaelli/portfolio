@@ -65,6 +65,7 @@
         justify-items: center;
         grid-template-columns: 1fr;
         gap: 50px;
+        padding-top: 160px;
     }
     .sobre-wrapper img{
         max-width: 30%;
