@@ -54,6 +54,7 @@ img {
   background-color: var(--background-first);
   border: 3px solid var(--yellow);
   border-radius: 5px;
+  white-space: nowrap
 }
 
 #btn-principal:hover {
