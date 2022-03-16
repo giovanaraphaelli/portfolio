@@ -1,8 +1,3 @@
-/* .introducao {
-  animation: fadeInLeft;
-  animation-duration: 1.5s;
-} */
-
 .introducao img {
   background-color: var(--background-second);
   border-radius: 20px;
