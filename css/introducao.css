@@ -9,12 +9,6 @@
   border: 3px solid var(--yellow);
 }
 
-.introducao-texto {
-  animation: zoomIn;
-  animation-duration: 0.8s;
-  line-height: 1.125;
-}
-
 .hello {
   font-size: 1.2rem;
 }

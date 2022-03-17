@@ -76,3 +76,11 @@ img {
     margin: 150px 0;
   }
 }
+
+.sobre-texto,
+.myimg,
+.projetos-box,
+.conhecimentos-wrapper,
+.introducao {
+  visibility: hidden;
+}
