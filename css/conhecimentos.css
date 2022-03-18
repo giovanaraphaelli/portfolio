@@ -85,9 +85,7 @@
     grid-template-columns: 1fr 1fr;
     margin: 50px;
   }
-  .conhecimento-icons img {
-    border: 3px solid var(--yellow);
-  }
+
   .conhecimento-icons-texto h4 {
     color: var(--yellow);
     font-size: 0.75rem;
