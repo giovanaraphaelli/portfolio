@@ -10,8 +10,8 @@ btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
 ScrollReveal({ reset: true });
-ScrollReveal().reveal(".sobre-texto", { delay: 400 });
-ScrollReveal().reveal(".myimg", { delay: 400 });
-ScrollReveal().reveal(".projetos-box", { delay: 400 });
-ScrollReveal().reveal(".conhecimentos-wrapper", { delay: 400 });
-ScrollReveal().reveal(".introducao", { delay: 400 });
+ScrollReveal().reveal(".sobre-texto", { delay: 300 });
+ScrollReveal().reveal(".myimg", { delay: 300 });
+ScrollReveal().reveal(".projetos-box", { delay: 300 });
+ScrollReveal().reveal(".conhecimentos-wrapper", { delay: 300 });
+ScrollReveal().reveal(".introducao", { delay: 300 });

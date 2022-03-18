@@ -34,7 +34,6 @@ img {
 
 .container {
   max-width: 1200px;
-  /* min-height: 100vh; */
   padding: 100px 40px;
   margin: 0 auto;
   display: grid;
@@ -72,8 +71,7 @@ img {
   .container {
     grid-template-columns: 1fr;
     min-height: initial;
-    padding: 20px 20px;
-    margin: 150px 0;
+    padding: 20px 0;
   }
 }
 

@@ -1,3 +1,8 @@
+.introducao {
+  height: calc(100vh - 100px);
+  padding: 0 40px;
+}
+
 .introducao img {
   background-color: var(--background-second);
   border-radius: 20px;
@@ -39,10 +44,12 @@ p {
 
 @media (max-width: 660px) {
   .introducao {
+    height: 500px;
     margin-top: 180px;
-    padding: 100px 20px;
+    padding: 0px 20px;
     grid-template-columns: 1fr;
   }
+
   .introducao img {
     display: none;
   }

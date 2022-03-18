@@ -93,4 +93,9 @@
     border: 3px solid var(--yellow);
     max-width: 50%;
   }
+
+  .sobre p {
+    padding: 0 10px;
+    font-size: 1.25rem;
+  }
 }
