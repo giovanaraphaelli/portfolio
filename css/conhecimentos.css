@@ -15,13 +15,11 @@
   border: 3px solid var(--background-first);
   transition: 0.3s;
 }
-
-.conhecimento-icons img:hover {
-  border: 3px solid var(--yellow);
-}
-
 .conhecimento-icons:hover {
   color: var(--yellow);
+}
+.conhecimento-icons:hover img {
+  border: 3px solid var(--yellow);
 }
 
 .conhecimento-icons-texto {
