@@ -6,6 +6,7 @@
 }
 
 .wrapper-btn-top {
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +20,17 @@
 }
 
 .btn-top {
+  margin-left: 30px;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.25rem;
+  font-weight: 700;
   color: var(--font-first);
   transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+  .btn-top {
+    font-size: 1rem;
+  }
 }
