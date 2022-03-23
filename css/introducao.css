@@ -3,6 +3,11 @@
   padding: 0 40px;
 }
 
+.introducao-texto {
+  animation: fadeInDown;
+  animation-duration: 1.5s;
+}
+
 .introducao img {
   background-color: var(--background-second);
   border-radius: 20px;
@@ -31,6 +36,24 @@ p {
 
 .introducao p {
   font-size: 2rem;
+}
+
+#build::after {
+  content: "|";
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1050px) {

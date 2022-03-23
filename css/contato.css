@@ -1,113 +1,113 @@
-.contato-container{
-    background-color: var(--background-second);
-    
-    
+.contato-container {
+  background-color: var(--background-second);
 }
 
-.contato-wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
+.contato-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
   align-items: flex-start;
   padding: 100px 50px;
   position: relative;
- 
 }
 
-.contato-titulo{
-    font-size: 2rem;
-    color: var(--yellow);
-    grid-column: 1 /-1;
-    text-transform: uppercase;
-    text-align: left;
+.contato-titulo {
+  font-size: 2rem;
+  color: var(--yellow);
+  grid-column: 1 /-1;
+  text-transform: uppercase;
+  text-align: left;
 }
 
-.contato-titulo::after{
-    content: "";
-    display: block;
-    width: 340px;
-    height: 2px;
-    position: absolute;
-    top: 117px;
-    left: 220px;
-   
-    background-color: var(--yellow);    
+.contato-titulo::after {
+  content: "";
+  display: block;
+  width: 340px;
+  height: 2px;
+  position: absolute;
+  top: 117px;
+  left: 220px;
+
+  background-color: var(--yellow);
 }
 
-.contato-container p, #meuemail{
+.contato-container p,
+#meuemail {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: right;
+}
+
+.redes-icons-wrapper a {
+  color: var(--font-first);
+  text-align: left;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.redes-icons-wrapper a:hover {
+  color: var(--yellow);
+}
+
+.redes-icon {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.redes-icon img {
+  width: 50px;
+  padding-right: 10px;
+}
+
+.contato-logo {
+  color: var(--yellow);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .contato-wrapper {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .contato-container h2 {
     font-size: 1.5rem;
-    line-height: 1.5;
-    font-weight: 400;
-    text-align: right;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .redes-icons-wrapper {
+    text-align: center;
+  }
+
+  .redes-icon {
+    padding-top: 30px;
+    justify-content: center;
+  }
+
+  .contato-container p,
+  a {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contato-titulo::after {
+    display: none;
+  }
 }
 
-.redes-icons-wrapper a{
-    color: var(--font-first);
-    text-align: left;
-    text-decoration: underline;
-    transition: .3s;
-}
+@media (max-width: 600px) {
+  .contato-container p,
+  a {
+    font-size: 1.125rem;
+    text-align: center;
+  }
 
-.redes-icons-wrapper a:hover{
-    color: var(--yellow);
-}
-
-.redes-icon{
-    display: flex;
-    justify-content: start;
-    gap: 10px;
-   
-}
-
-.redes-icon img{
-    width: 50px;
-    padding-right: 10px;
-}
-
-.contato-logo{
-    color: var(--yellow);
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-@media (max-width: 1000px){
-    .contato-wrapper{    
-        grid-template-columns: 1fr;
-        justify-content:center;
-    }
-    .contato-container h2{
-        font-size: 1.5rem;
-        text-align: center;
-        padding-bottom: 20px;
-        
-    }
-    .redes-icons-wrapper{
-        text-align: center;
-    }
-
-    .redes-icon{
-        padding-top: 30px;
-        justify-content: center;
-    }
-
-    .contato-container p,a{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .contato-titulo::after{
-        display: none;
-    }
-}
-
-@media (max-width: 600px){
-
-    .contato-container p, a {
-        font-size: 1.125rem;
-        text-align: center;
-    }
-
+  #meuemail {
+    font-size: 1.3rem;
+  }
 }

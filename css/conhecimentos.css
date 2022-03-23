@@ -23,6 +23,7 @@
 }
 
 .conhecimento-icons-texto {
+  margin-top: 15px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -79,7 +80,7 @@
 
 @media (max-width: 750px) {
   .conhecimentos-wrapper {
-    gap: 50px;
+    gap: 30px 40px;
     grid-template-columns: 1fr 1fr;
     margin: 50px;
   }
@@ -97,7 +98,6 @@
 
 @media (max-width: 500px) {
   .conhecimentos-wrapper {
-    gap: 20px;
     grid-template-columns: 1fr 1fr;
     margin: 20px;
   }

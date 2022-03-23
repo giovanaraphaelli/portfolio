@@ -6,24 +6,25 @@
   --font-second: #f2f2f2;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   font-family: "Archivo", sans-serif;
-  margin: 0px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
+}
+
+body {
   margin-top: 85px;
   color: var(--font-first);
   background-color: var(--background-first);
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0px;
-}
-
 ul {
-  margin: 0px;
-  padding: 0px;
   list-style: none;
 }
 
@@ -78,7 +79,6 @@ img {
 .sobre-texto,
 .myimg,
 .projetos-box,
-.conhecimentos-wrapper,
-.introducao {
+.conhecimentos-wrapper {
   visibility: hidden;
 }

@@ -15,3 +15,14 @@ ScrollReveal().reveal(".myimg", { delay: 300 });
 ScrollReveal().reveal(".projetos-box", { delay: 300 });
 ScrollReveal().reveal(".conhecimentos-wrapper", { delay: 300 });
 ScrollReveal().reveal(".introducao", { delay: 300 });
+
+function typeWriter(elemento) {
+  const textoArray = elemento.innerHTML.split("");
+  elemento.innerHTML = "";
+  textoArray.forEach((letra, i) => {
+    setTimeout(() => (elemento.innerHTML += letra), 100 * i);
+  });
+}
+
+const build = document.querySelector("#build");
+typeWriter(build);
