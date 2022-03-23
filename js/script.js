@@ -1,3 +1,5 @@
+// Menu Mobile
+
 const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu(event) {
@@ -9,13 +11,28 @@ function toggleMenu(event) {
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
-ScrollReveal({ reset: true });
-ScrollReveal().reveal(".sobre-texto", { delay: 300 });
-ScrollReveal().reveal(".myimg", { delay: 300 });
-ScrollReveal().reveal(".projetos-box", { delay: 300 });
-ScrollReveal().reveal(".conhecimentos-wrapper", { delay: 300 });
-ScrollReveal().reveal(".introducao", { delay: 300 });
+//ScrollRevel
 
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "50px",
+  duration: 2000,
+});
+
+sr.reveal(".sobre-texto", { delay: 300 });
+sr.reveal(".myimg", { delay: 300 });
+sr.reveal(".projetos-box", { delay: 300 });
+sr.reveal(".conhecimentos-wrapper", { delay: 300 });
+sr.reveal(".introducao", { delay: 300 });
+
+// ScrollReveal({ reset: true });
+// ScrollReveal().reveal(".sobre-texto", { delay: 300 });
+// ScrollReveal().reveal(".myimg", { delay: 300 });
+// ScrollReveal().reveal(".projetos-box", { delay: 300 });
+// ScrollReveal().reveal(".conhecimentos-wrapper", { delay: 300 });
+// ScrollReveal().reveal(".introducao", { delay: 300 });
+
+// Efeito Máquina de Escrever
 function typeWriter(elemento) {
   const textoArray = elemento.innerHTML.split("");
   elemento.innerHTML = "";

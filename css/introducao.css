@@ -3,10 +3,10 @@
   padding: 0 40px;
 }
 
-.introducao-texto {
+/* .introducao-texto {
   animation: fadeInDown;
   animation-duration: 1.5s;
-}
+} */
 
 .introducao img {
   background-color: var(--background-second);
