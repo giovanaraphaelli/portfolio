@@ -14,7 +14,6 @@
   left: 0;
   z-index: 99;
   opacity: 0.97;
-  /* border-bottom: 0.3px solid var(--yellow); */
 }
 
 .header-logo {
@@ -31,11 +30,10 @@
 .header-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
 }
-
 .header-menu a {
   font-size: 1.125rem;
   line-height: 1.3;
@@ -43,8 +41,24 @@
   padding: 10px;
   text-decoration: none;
   color: var(--font-first);
-  display: block;
+  display: flex;
+  justify-content: center;
   transition: 0.3s;
+  position: relative;
+}
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: var(--yellow);
+  margin-top: 25px;
+  transition: 0.5s;
+  position: absolute;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
 }
 
 .header-menu a:hover {
@@ -76,6 +90,9 @@
     padding-right: 80px;
     margin-bottom: 30px;
     margin-top: 30px;
+  }
+  .header-menu a:hover:after {
+    display: none;
   }
 
   #nav.active .header-menu {

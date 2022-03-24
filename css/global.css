@@ -63,6 +63,10 @@ img {
   background-color: var(--yellow);
 }
 
+#btn-principal:hover:after {
+  display: none;
+}
+
 @media (max-width: 800px) {
   body {
     margin-top: 0px;
