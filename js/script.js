@@ -23,14 +23,8 @@ sr.reveal(".sobre-texto", { delay: 300 });
 sr.reveal(".myimg", { delay: 300 });
 sr.reveal(".projetos-box", { delay: 300 });
 sr.reveal(".conhecimentos-wrapper", { delay: 300 });
+sr.reveal(".descricao", { delay: 300 });
 sr.reveal(".introducao", { delay: 300 });
-
-// ScrollReveal({ reset: true });
-// ScrollReveal().reveal(".sobre-texto", { delay: 300 });
-// ScrollReveal().reveal(".myimg", { delay: 300 });
-// ScrollReveal().reveal(".projetos-box", { delay: 300 });
-// ScrollReveal().reveal(".conhecimentos-wrapper", { delay: 300 });
-// ScrollReveal().reveal(".introducao", { delay: 300 });
 
 // Efeito Máquina de Escrever
 function typeWriter(elemento) {
@@ -43,3 +37,34 @@ function typeWriter(elemento) {
 
 const build = document.querySelector("#build");
 typeWriter(build);
+
+//Muda Descrição
+
+function mudaDescricao(nameCard, text) {
+  var mudaDescricao = document.querySelector(".mudaDescricao");
+
+  document.querySelector(nameCard).addEventListener("mouseover", () => {
+    mudaDescricao.innerHTML = text;
+  });
+  document.querySelector(nameCard).addEventListener("mouseout", () => {
+    mudaDescricao.innerHTML = `*passe o cursor do mouse no card para saber meus conhecimentos sobre a linguagem*`;
+  });
+}
+
+mudaDescricao(
+  ".html",
+  "Conhecimento intermediário em estrutura de layouts, principais tags, HTML semântico, criação de tabelas e formulários."
+);
+mudaDescricao(
+  ".css",
+  "Conhecimento intermediário em estilização de layouts, positions, box model, display, CSS grid, flexbox, pseudo-classes e responsividade com media queries."
+);
+mudaDescricao(
+  ".js",
+  "Conhecimento básico em  manipulação de DOM, tipo de dados, objetos, métodos, funções e eventos."
+);
+
+mudaDescricao(
+  ".git",
+  "Conhecimento em versionamento e principais comandos. Como: git status, git add, git commit, git push e pull, git clone, git merge e branch. "
+);

@@ -50,7 +50,7 @@
   height: 2px;
   position: absolute;
   top: 15px;
-  left: 255px;
+  left: 205px;
   z-index: -1;
   background-color: var(--yellow);
 }

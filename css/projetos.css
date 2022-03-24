@@ -1,6 +1,6 @@
 .projetos-wrapper {
   display: grid;
-  gap: 15px;
+  gap: 40px 15px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column: 1 /-1;
   align-items: flex-end;
@@ -93,7 +93,7 @@
 @media (max-width: 650px) {
   .projetos-wrapper {
     grid-template-columns: 1fr;
-    padding-top: 160px;
+    padding-top: 100px;
   }
 
   .projetos-box {

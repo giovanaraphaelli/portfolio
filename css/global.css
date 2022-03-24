@@ -79,6 +79,7 @@ img {
 .sobre-texto,
 .myimg,
 .projetos-box,
-.conhecimentos-wrapper {
+.conhecimentos-wrapper,
+.descricao {
   visibility: hidden;
 }
