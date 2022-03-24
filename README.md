@@ -1,9 +1,9 @@
 # portfolio
 <p>Meu portfólio pessoal criado com o objetivo de mostrar meus projetos ao longo da minha carreira.</p>
+<br>
+<p>Inspirações de Design:</p>
 
-<p>Inspiraçoes de design:</p>
-[IuriCode](https://iuricode.vercel.app)
-[Brittany Chiang](https://brittanychiang.com)
-[Afuah Deborah](https://afuadeborahcodes.com)
-
+* [IuriCode](https://iuricode.vercel.app/)
+* [Brittany Chiang](https://brittanychiang.com/)
+* [Afua Deborah](https://afuadeborahcodes.com/)
 
