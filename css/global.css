@@ -24,6 +24,14 @@ body {
   background-image: url(/img/symbol-scatter-haikei.svg);
   background-color: var(--background-first);
 }
+.sobre-texto,
+.introducao,
+.myimg,
+.projetos-box,
+.conhecimentos-wrapper,
+.descricao {
+  visibility: hidden;
+}
 
 ul {
   list-style: none;
@@ -79,12 +87,4 @@ img {
     min-height: initial;
     padding: 20px 0;
   }
-}
-
-.sobre-texto,
-.myimg,
-.projetos-box,
-.conhecimentos-wrapper,
-.descricao {
-  visibility: hidden;
 }
