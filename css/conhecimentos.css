@@ -9,12 +9,15 @@
 }
 
 .conhecimento-icons {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  width: 120px;
   cursor: pointer;
 }
 
 .conhecimento-icons img {
+  width: 100%;
   background-color: var(--background-second);
   border-radius: 20px;
   border: 3px solid var(--background-first);
@@ -29,7 +32,8 @@
 }
 
 .conhecimento-icons-texto {
-  min-width: 120px;
+  font-size: 1rem;
+  min-width: 100%;
   margin-top: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -64,8 +68,15 @@
 .conhecimentos-wrapper {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
+  justify-items: center;
+}
+
+.descricao {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .mudaDescricao {
@@ -76,9 +87,11 @@
 }
 
 @media (max-width: 1000px) {
+  .conhecimentos-container {
+    padding: 0 120px;
+  }
   .conhecimentos-wrapper {
     grid-column: 1/-1;
-    grid-row: 3/4;
   }
   .descricao {
     grid-column: 1/-1;
@@ -98,34 +111,31 @@
 
 @media (max-width: 750px) {
   .conhecimentos-container {
-    gap: 0px;
+    padding: 0 60px;
   }
 
-  .conhecimentos-wrapper {
-    gap: 30px 40px;
-    grid-template-columns: 1fr 1fr;
-    margin: 50px;
-  }
-
-  .conhecimento-icons-texto h4 {
-    color: var(--yellow);
-    font-size: 0.75rem;
-    width: 100px;
+  .conhecimento-icons-texto {
+    font-size: 0.8rem;
   }
   .conhecimentos-titulo {
     padding-top: 160px;
   }
+  .mudaDescricao {
+  }
 }
 
 @media (max-width: 500px) {
+  .conhecimentos-container {
+    padding: 0 20px;
+  }
   .conhecimentos-wrapper {
-    margin: 20px;
+    gap: 10px;
+  }
+  .conhecimento-icons {
+    width: 80px;
   }
   .mudaDescricao {
     font-size: 1.25rem;
-    min-height: 180px;
-  }
-  .conhecimentos-container {
-    padding: 30px 10px;
+    min-height: 150px;
   }
 }

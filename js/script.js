@@ -47,7 +47,7 @@ function mudaDescricao(nameCard, text) {
     mudaDescricao.innerHTML = text;
   });
   document.querySelector(nameCard).addEventListener("mouseout", () => {
-    mudaDescricao.innerHTML = `*passe o cursor do mouse no card para saber meus conhecimentos sobre a linguagem*`;
+    mudaDescricao.innerHTML = `*passe o cursor no card para saber mais sobre meus conhecimentos*`;
   });
 }
 
@@ -57,7 +57,7 @@ mudaDescricao(
 );
 mudaDescricao(
   ".css",
-  "Conhecimento intermediário em estilização de layouts, positions, box model, display, CSS grid, flexbox, pseudo-classes e responsividade com media queries."
+  "Conhecimento intermediário em estilização de layouts, positions, box model, display, CSS grid, flexbox, pseudo-classes."
 );
 mudaDescricao(
   ".js",
@@ -66,5 +66,15 @@ mudaDescricao(
 
 mudaDescricao(
   ".git",
-  "Conhecimento em versionamento e principais comandos. Como: git status, git add, git commit, git push e pull, git clone, git merge e branch. "
+  "Conhecimento em versionamento e principais comandos, como: git status, git add, git commit, git push e pull, git clone, git merge e branch. "
+);
+
+mudaDescricao(
+  ".respo",
+  "Conhecimento intermediário em responsividade utilizando de propriedades CSS de flexibilização de elementos e adição de breakpoints."
+);
+
+mudaDescricao(
+  ".acess",
+  "Conhecimento básico em  boas práticas, como: elementos semânticos, descrição de imagens, níveis de título, botões e links."
 );

@@ -16,17 +16,15 @@
   transition: 0.3s;
 }
 
-.sobre img:hover {
+.sobre-wrapper:hover .myimg {
   border: 3px solid var(--yellow);
 }
 
 .sobre-wrapper {
   display: grid;
-  gap: 20px;
   grid-template-columns: 2fr 1fr;
   gap: 100px;
   align-items: center;
-  position: relative;
 }
 
 .sobre-icons {
@@ -41,6 +39,8 @@
   grid-column: 1 /-1;
   text-transform: uppercase;
   text-align: left;
+  position: relative;
+  padding-bottom: 100px;
 }
 
 .sobre-subtitulo::after {
@@ -68,13 +68,14 @@
     justify-items: center;
     grid-template-columns: 1fr;
     gap: 50px;
-    padding-top: 160px;
   }
   .sobre-wrapper img {
     max-width: 30%;
   }
   .sobre-subtitulo {
+    text-align: center;
     font-size: 1.5rem;
+    padding-bottom: 60px;
   }
   .sobre-subtitulo::after {
     display: none;
