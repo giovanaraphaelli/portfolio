@@ -55,7 +55,12 @@ p {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
+  .introducao {
+    height: 500px;
+    margin-top: 180px;
+    padding: 0px 20px;
+  }
   .introducao h1 {
     font-size: 3rem;
   }

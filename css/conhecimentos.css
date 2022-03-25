@@ -86,6 +86,10 @@
   min-height: 100px;
 }
 
+.ativar {
+  color: var(--yellow);
+}
+
 @media (max-width: 1000px) {
   .conhecimentos-container {
     padding: 0 120px;
