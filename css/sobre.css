@@ -46,7 +46,7 @@
 .sobre-subtitulo::after {
   content: "";
   display: block;
-  width: 250px;
+  width: 300px;
   height: 2px;
   position: absolute;
   top: 15px;

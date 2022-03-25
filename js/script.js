@@ -53,15 +53,15 @@ function mudaDescricao(nameCard, text) {
 
 mudaDescricao(
   ".html",
-  "Conhecimento intermediário em estrutura de layouts, principais tags, HTML semântico, criação de tabelas e formulários."
+  "Conhecimento em estrutura de layouts, principais tags, HTML semântico, criação de tabelas e formulários."
 );
 mudaDescricao(
   ".css",
-  "Conhecimento intermediário em estilização de layouts, positions, box model, display, CSS grid, flexbox, pseudo-classes."
+  "Conhecimento em estilização de layouts, positions, box model, display, CSS grid, flexbox, pseudo-classes."
 );
 mudaDescricao(
   ".js",
-  "Conhecimento básico em  manipulação de DOM, tipo de dados, objetos, métodos, funções e eventos."
+  "Conhecimento em  manipulação de DOM, tipo de dados, objetos, métodos, funções e eventos."
 );
 
 mudaDescricao(
@@ -71,10 +71,10 @@ mudaDescricao(
 
 mudaDescricao(
   ".respo",
-  "Conhecimento intermediário em responsividade utilizando de propriedades CSS de flexibilização de elementos e adição de breakpoints."
+  "Conhecimento em responsividade utilizando de propriedades CSS de flexibilização de elementos e adição de breakpoints."
 );
 
 mudaDescricao(
   ".acess",
-  "Conhecimento básico em  boas práticas, como: elementos semânticos, descrição de imagens, níveis de título, botões e links."
+  "Conhecimento em  boas práticas, como: elementos semânticos, descrição de imagens, níveis de título, botões e links."
 );
