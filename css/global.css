@@ -19,10 +19,10 @@ html {
 }
 
 body {
-  margin-top: 85px;
   color: var(--font-first);
   background-image: url(/img/symbol-scatter-haikei.svg);
   background-color: var(--background-first);
+  margin-top: 85px;
 }
 .sobre-texto,
 .introducao,

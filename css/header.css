@@ -1,6 +1,15 @@
-#header {
+header {
   background-color: var(--background-first);
-  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0.97;
+}
+
+nav {
   height: 100px;
   max-width: 1200px;
   padding: 20px 20px;
@@ -8,12 +17,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 99;
-  opacity: 0.97;
 }
 
 .header-logo {
@@ -57,7 +60,7 @@
   position: absolute;
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover::after {
   width: 100%;
 }
 
