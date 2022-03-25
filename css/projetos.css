@@ -42,7 +42,7 @@
   align-content: space-between;
 }
 .projetos-box h3 {
-  color: var(--yellow);
+  color: var(--font-first);
   text-transform: uppercase;
 }
 .projetos-box img {
@@ -53,6 +53,10 @@
 
 .projetos-box:hover {
   border: 3px solid var(--yellow);
+}
+
+.projetos-box:hover h3 {
+  color: var(--yellow);
 }
 
 .projetos-conteudo {
