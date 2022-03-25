@@ -75,4 +75,7 @@ p {
   .introducao img {
     display: none;
   }
+  .introducao-texto {
+    margin-left: 0;
+  }
 }
