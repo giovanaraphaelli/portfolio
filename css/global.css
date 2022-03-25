@@ -60,7 +60,7 @@ img {
   text-decoration: none;
   color: var(--yellow);
   font-weight: 700;
-  background-color: var(--background-first);
+  background-color: transparent;
   border: 3px solid var(--yellow);
   border-radius: 80px;
   white-space: nowrap;

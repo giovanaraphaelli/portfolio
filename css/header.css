@@ -25,7 +25,6 @@ nav {
   padding: 10px;
   font-size: 1.25rem;
   font-weight: 700;
-  border-bottom: 3px solid var(--background-first);
   text-decoration: none;
   transition: o.3s;
 }
