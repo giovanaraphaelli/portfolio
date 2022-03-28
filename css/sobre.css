@@ -14,6 +14,7 @@
   background-color: var(--background-second);
   border: 3px solid var(--background-second);
   transition: 0.3s;
+  min-width: 220px;
 }
 
 .sobre-wrapper:hover .myimg {
@@ -64,11 +65,6 @@
 }
 
 @media (max-width: 1000px) {
-  .sobre-wrapper {
-    justify-items: center;
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
   .sobre-wrapper img {
     max-width: 30%;
   }
@@ -80,23 +76,25 @@
   .sobre-subtitulo::after {
     display: none;
   }
-  .sobre p {
-    text-align: center;
+ 
+
+@media (max-width: 650px) {
+  .sobre-wrapper {
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+  .sobre-wrapper img {
+    gap: 50px;
+    border: 3px solid var(--yellow);
+    max-width: 50%;
   }
   .sobre-texto {
     justify-items: center;
     order: 3;
   }
-}
-
-@media (max-width: 650px) {
-  .sobre-wrapper img {
-    border: 3px solid var(--yellow);
-    max-width: 50%;
-  }
 
   .sobre p {
+    text-align: center;
     padding: 0 10px;
     font-size: 1.25rem;
   }
-}

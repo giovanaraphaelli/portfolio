@@ -70,7 +70,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .contato-wrapper {
     grid-template-columns: 1fr;
     justify-content: center;
