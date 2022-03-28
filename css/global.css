@@ -24,14 +24,6 @@ body {
   background-color: var(--background-first);
   margin-top: 85px;
 }
-.sobre-texto,
-.introducao,
-.myimg,
-.projetos-box,
-.conhecimentos-wrapper,
-.descricao {
-  visibility: hidden;
-}
 
 ul {
   list-style: none;
@@ -74,6 +66,15 @@ img {
 
 #btn-principal:hover:after {
   display: none;
+}
+.sobre-texto,
+.introducao,
+.myimg,
+.projetos-box,
+.conhecimentos-wrapper,
+.descricao {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 800px) {
