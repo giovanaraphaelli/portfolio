@@ -104,4 +104,7 @@
     border: 3px solid var(--yellow);
     margin: 0 20px;
   }
+  .projetos-box h3 {
+    color: var(--yellow);
+  }
 }
