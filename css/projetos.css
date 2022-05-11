@@ -77,6 +77,23 @@
 .icon-folder {
   width: 36px;
 }
+.wrapper-btn {
+  grid-column: 1 /-1;
+  text-align: center;
+}
+.btn-top {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--font-first);
+}
+
+@media (max-width: 600px) {
+  .btn-top {
+    font-size: 1rem;
+  }
+}
 
 @media (max-width: 1000px) {
   .projetos-wrapper {

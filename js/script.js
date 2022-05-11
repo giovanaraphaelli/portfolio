@@ -25,6 +25,7 @@ sr.reveal(".projetos-box", { delay: 300 });
 sr.reveal(".conhecimentos-wrapper", { delay: 300 });
 sr.reveal(".descricao", { delay: 300 });
 sr.reveal(".introducao", { delay: 300 });
+sr.reveal(".wrapper-btn", { delay: 300 });
 
 // Efeito Máquina de Escrever
 function typeWriter(elemento) {
