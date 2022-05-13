@@ -81,6 +81,7 @@
   .sobre-wrapper {
     justify-items: center;
     grid-template-columns: 1fr;
+    gap: 50px;
   }
   .sobre-wrapper img {
     gap: 50px;

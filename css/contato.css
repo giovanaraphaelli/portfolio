@@ -101,13 +101,17 @@
 }
 
 @media (max-width: 600px) {
+  .contato-wrapper {
+    padding: 50px 30px;
+  }
+  .contato-logo,
   .contato-container p,
   a {
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-align: center;
   }
 
   #meuemail {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
