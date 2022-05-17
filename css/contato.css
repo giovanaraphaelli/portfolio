@@ -65,9 +65,12 @@
 
 .contato-logo {
   color: var(--yellow);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
+}
+.dev {
+  font-size: 1.2rem !important;
 }
 
 @media (max-width: 1000px) {
