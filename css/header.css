@@ -1,5 +1,6 @@
 header {
   background-color: var(--background-first);
+  height: 70px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -10,9 +11,8 @@ header {
 }
 
 nav {
-  height: 100px;
   max-width: 1200px;
-  padding: 20px 20px;
+  padding: 10px 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -37,8 +37,7 @@ nav {
   align-items: center;
 }
 .header-menu a {
-  font-size: 1.125rem;
-  line-height: 1.3;
+  font-size: 1rem;
   text-transform: uppercase;
   padding: 10px;
   text-decoration: none;
@@ -76,7 +75,7 @@ nav {
     display: block;
     position: absolute;
     width: 100%;
-    top: 100px;
+    top: 70px;
     right: 0;
     display: block;
     background-color: var(--background-second);
@@ -98,7 +97,7 @@ nav {
   }
 
   #nav.active .header-menu {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }
