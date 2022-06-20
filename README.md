@@ -29,7 +29,7 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 
 
-## 🖌️ Inspirações de Design:
+## 🖌️ Inspirações de Design
 
 * [IuriCode](https://iuricode.vercel.app/)
 * [Brittany Chiang](https://brittanychiang.com/)
