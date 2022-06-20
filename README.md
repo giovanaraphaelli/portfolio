@@ -1,9 +1,11 @@
 # portfolio
-#### Meu portfólio pessoal desenvolvido com o objetivo de apresentar um pouco sobre mim e meus conhecimentos. Além de mostrar meus projetos ao decorrer de minha carreira..
 
 ![Resultado final do projeto](img/projeto-final.png)
 
 <h4 align="center"><a href="https://giovanaraphaelli.vercel.app/">Clique para visitar o projeto</a></h4>
+
+## 🎯 Objetivo
+Meu portfólio pessoal desenvolvido com o objetivo de apresentar um pouco sobre mim e meus conhecimentos. Além de mostrar meus projetos ao decorrer de minha carreira..
 
 ## 📚 Seções
 
