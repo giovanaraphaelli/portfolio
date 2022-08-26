@@ -9,7 +9,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 40px;
   align-items: flex-start;
-  padding: 100px 50px;
+  padding: 50px;
   position: relative;
 }
 
@@ -22,12 +22,12 @@
 }
 
 .contato-titulo::after {
-  content: "";
+  content: '';
   display: block;
   width: 330px;
   height: 2px;
   position: absolute;
-  top: 117px;
+  top: 65px;
   left: 220px;
 
   background-color: var(--yellow);
@@ -35,7 +35,7 @@
 
 .contato-container p,
 #meuemail {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 400;
   text-align: right;

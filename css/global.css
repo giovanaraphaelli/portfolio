@@ -13,7 +13,7 @@
 }
 
 html {
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 40px;
 }
@@ -36,7 +36,7 @@ img {
 
 .container {
   max-width: 1200px;
-  padding: 100px 40px;
+  padding: 50px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;

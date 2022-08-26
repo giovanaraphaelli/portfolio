@@ -17,10 +17,10 @@
   grid-column: 1 /-1;
   text-transform: uppercase;
   text-align: left;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 .projetos-subtitulo::after {
-  content: "";
+  content: '';
   display: block;
   width: 300px;
   height: 2px;
