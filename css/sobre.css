@@ -60,9 +60,7 @@
   display: grid;
   grid-template-columns: auto;
   gap: 20px;
-  align-content: end;
-  justify-content: end;
-  justify-items: end;
+  justify-items: start;
 }
 
 @media (max-width: 1000px) {
