@@ -87,8 +87,8 @@ mudaDescricao(
 );
 
 mudaDescricao(
-  '.bootstrap',
-  'Conhecimento em construção de layouts e componentes.'
+  '.typescript',
+  "Conhecimento sobre tipos primitivos, funções, objetos, type, interfaces, union, generics. E também TypeScript com foco em React, como tipagem de componente, estados e resposta de API's"
 );
 
 mudaDescricao(
