@@ -1,6 +1,6 @@
 import { Button } from '../button';
 
-export function About() {
+export function Home() {
   return (
     <div id="#home" className="bg-light-background dark:bg-dark-background ">
       <div className="container mx-auto px-2 py-2 h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center gap-6">
