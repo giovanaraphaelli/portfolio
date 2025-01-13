@@ -20,20 +20,20 @@ export default {
         light: {
           background: '#DDDDF5',
           surface: '#C3C3E6',
-          accent: '#B8B8E6',
+          accent: '#cecef3',
           primary: '#170A33',
           secondary: '#4C5095',
           highlight: '#27272E',
           text: '#38383F',
         },
         dark: {
-          background: '#1C1C1F',
-          surface: '#212126',
-          accent: '#27272E',
-          primary: '#777AC0',
-          secondary: '#C0C3FD',
-          highlight: '#D3D3F7',
-          text: '#9797B0',
+          background: '#18181B', // Um tom um pouco mais escuro para melhorar o contraste
+          surface: '#27272e', // Um leve ajuste para diferenciar do background
+          accent: '#3d3d49', // Mais contraste com a superfície
+          primary: '#918CFF', // Um pouco mais vibrante para melhorar a legibilidade
+          secondary: '#C0C3FD', // Ajustado para melhor contraste com fundo escuro
+          highlight: '#E3E3FF', // Mais brilho para destacar melhor
+          text: '#B0B0D0',
         },
       },
     },

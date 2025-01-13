@@ -21,7 +21,7 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 56); // Ativa ao rolar 50px
+      setScrolled(window.scrollY > 56);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -77,7 +77,7 @@ export function Navbar() {
           </ul>
           <button
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            className="p-2 rounded-full bg-light-accent dark:bg-dark-accent text-light-secondary dark:text-dark-primary hover:bg-light-secondary dark:hover:bg-dark-primary hover:text-light-accent dark:hover:text-dark-accent 
+            className="p-2 shadow-md rounded-full bg-light-accent dark:bg-dark-accent text-light-secondary dark:text-dark-primary hover:bg-light-secondary dark:hover:bg-dark-primary hover:text-light-accent dark:hover:text-dark-accent 
              transition-colors duration-300"
           >
             {theme === 'light' ? (

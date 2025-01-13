@@ -10,7 +10,7 @@ const name = `
 export function Home() {
   return (
     <div id="home" className="bg-light-background dark:bg-dark-background ">
-      <div className="container mx-auto h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center gap-6">
+      <div className="container mx-auto h-screen flex flex-col justify-center items-center gap-6">
         <span className="text-lg text-light-text dark:text-dark-text ">
           hello word!
         </span>
