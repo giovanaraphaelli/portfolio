@@ -12,7 +12,6 @@ export default {
         subtitle: [
           '1.5rem',
           {
-            fontFamily: ['IBM Plex Mono', 'mono'],
             fontWeight: '500',
           },
         ],
@@ -34,7 +33,7 @@ export default {
           primary: '#777AC0',
           secondary: '#C0C3FD',
           highlight: '#D3D3F7',
-          text: '#6C6C80',
+          text: '#9797B0',
         },
       },
     },
