@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@layer components {
+  .custom-swiper-pagination .swiper-pagination-bullet {
+    @apply bg-light-text dark:bg-dark-text transition-colors duration-300;
+  }
+
+  .custom-swiper-pagination .swiper-pagination-bullet-active {
+    @apply bg-light-secondary dark:bg-dark-primary;
+  }
+}
