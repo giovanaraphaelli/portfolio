@@ -12,7 +12,7 @@ interface SkillsGridProps {
 const SkillsGrid: React.FC<SkillsGridProps> = ({ skills }) => {
   return (
     <div id="skills" className="bg-light-background dark:bg-dark-background ">
-      <div className="container mx-auto h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center">
+      <div className="container mx-auto h-full lg:h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center p-4">
         <h2 className="text-subtitle font-mono text-center text-light-primary dark:text-dark-secondary">
           {'<!-- skills -->'}
         </h2>
@@ -25,7 +25,7 @@ const SkillsGrid: React.FC<SkillsGridProps> = ({ skills }) => {
               <div className="text-4xl md:text-4xl lg:text-8xl text-light-secondary dark:text-dark-primary">
                 {skill.icon}
               </div>
-              <p className="text-sm font-medium text-light-text dark:text-dark-text">
+              <p className="text-sm font-medium text-center text-light-text dark:text-dark-text">
                 {skill.name}
               </p>
             </div>

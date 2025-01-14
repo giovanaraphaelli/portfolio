@@ -25,26 +25,25 @@ const experience = `
 
 export function About() {
   return (
-    <div id="about" className="bg-light-background dark:bg-dark-background ">
-      <div className="container mx-auto h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center">
+    <div id="about" className="bg-light-background dark:bg-dark-background">
+      <div className="container mx-auto h-full lg:h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center p-4">
         <h2 className="text-subtitle font-mono text-center text-light-primary dark:text-dark-secondary">
           {'<!-- sobre mim -->'}
         </h2>
-        <div className="grid grid-cols-2 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 max-w-6xl">
           <div className="flex items-center flex-col gap-6">
             <img
               className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-60 lg:h-60 rounded-full border-2 shadow-md border-light-secondary dark:border-dark-secondary"
               src="perfil.png"
-              alt=""
+              alt="Profile"
             />
-            <ReactMarkdown className="font-mono  text-xl text-light-primary dark:text-dark-secondary">
+            <ReactMarkdown className="font-mono text-base lg:text-xl text-light-primary dark:text-dark-secondary">
               {profile}
             </ReactMarkdown>
-            <p></p>
           </div>
 
-          <div className="flex flex-col gap-4 justify-center">
-            <p className="max-w-lg text-base font-medium text-light-text dark:text-dark-text">
+          <div className="flex flex-col gap-6 justify-center">
+            <p className="text-base font-medium text-light-text dark:text-dark-text">
               Sou Desenvolvedora Front-End, apaixonada por criar interfaces
               intuitivas e bem estruturadas com React e TypeScript.
               <br />
@@ -54,6 +53,7 @@ export function About() {
               Sempre busco desenvolver soluções eficientes que proporcionem a
               melhor experiência para os usuários. 🚀
             </p>
+
             <div>
               <ReactMarkdown className="font-mono text-xl font-medium tracking-widest text-light-secondary dark:text-dark-primary">
                 {education}
@@ -72,7 +72,7 @@ export function About() {
             </div>
 
             <div>
-              <ReactMarkdown className="font-mono text-xl font-medium tracking-widest  text-light-secondary dark:text-dark-primary">
+              <ReactMarkdown className="font-mono text-xl font-medium tracking-widest text-light-secondary dark:text-dark-primary">
                 {experience}
               </ReactMarkdown>
               <ul className="py-2 list-disc text-light-text dark:text-dark-text">
