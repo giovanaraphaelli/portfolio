@@ -1,4 +1,4 @@
-import { Button } from '../button';
+import { Button } from '../../components/button';
 import ReactMarkdown from 'react-markdown';
 
 const name = `
