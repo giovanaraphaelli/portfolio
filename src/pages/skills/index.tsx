@@ -1,4 +1,5 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
+import { Layout } from '../../components/layout';
 
 interface skill {
   name: string;
@@ -9,31 +10,30 @@ interface SkillsGridProps {
   skills: skill[];
 }
 
-const SkillsGrid: React.FC<SkillsGridProps> = ({ skills }) => {
-  return (
-    <div id="skills" className="bg-light-background dark:bg-dark-background ">
-      <div className="container mx-auto h-full lg:h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center p-4">
-        <h2 className="text-subtitle font-mono text-center text-light-primary dark:text-dark-secondary">
-          {'<!-- skills -->'}
-        </h2>
-        <div className="grid gap-6 grid-cols-2 lg:grid-cols-4 py-8">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center p-6 rounded-lg  bg-light-surface dark:bg-dark-surface shadow-xl"
-            >
-              <div className="text-4xl md:text-4xl lg:text-8xl text-light-secondary dark:text-dark-primary">
-                {skill.icon}
-              </div>
-              <p className="text-sm font-medium text-center text-light-text dark:text-dark-text">
-                {skill.name}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+const subtitle = `
+\`\`\`html
+<!-- skills -->
+\`\`\`
+`;
 
-export default SkillsGrid;
+export function SkillsGrid({ skills }: SkillsGridProps) {
+  return (
+    <Layout subtitle={subtitle} id="skills">
+      <div className="grid gap-6 grid-cols-2 lg:grid-cols-4 py-8">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center p-6 rounded-lg  bg-light-surface dark:bg-dark-surface shadow-xl"
+          >
+            <div className="text-4xl md:text-4xl lg:text-8xl text-light-secondary dark:text-dark-primary">
+              {skill.icon}
+            </div>
+            <p className="text-sm font-medium text-center text-light-text dark:text-dark-text">
+              {skill.name}
+            </p>
+          </div>
+        ))}
+      </div>
+    </Layout>
+  );
+}
