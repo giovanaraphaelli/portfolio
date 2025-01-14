@@ -14,7 +14,7 @@ export function Home() {
         <span className="text-lg sm:text-xl md:text-2xl text-light-text dark:text-dark-text ">
           hello word!
         </span>
-        <ReactMarkdown className="font-mono text-3xl md:text-6xl lg:text-8xl text-light-primary dark:text-dark-secondary">
+        <ReactMarkdown className="font-mono text-3xl md:text-6xl text-light-primary dark:text-dark-secondary">
           {name}
         </ReactMarkdown>
         <p className="text-2xl md:text-4xl text-light-secondary dark:text-dark-primary ">
