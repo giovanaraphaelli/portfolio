@@ -4,7 +4,7 @@ import { SiGithub } from 'react-icons/si';
 
 export function Socials() {
   const iconClass =
-    'rounded-full border-2 text-light-secondary border-light-secondary hover:text-light-surface hover:bg-light-secondary dark:bg-dark-surface dark:text-dark-secondary dark:border-dark-secondary dark:hover:text-dark-surface dark:hover:bg-dark-secondary p-2 shadow-lg transition-colors duration-300';
+    'rounded-full border-2 text-light-secondary border-light-secondary hover:text-light-surface hover:bg-light-secondary dark:bg-dark-surface dark:text-dark-primary dark:border-dark-primary dark:hover:text-dark-surface dark:hover:bg-dark-primary p-2 shadow-lg transition-colors duration-300';
 
   return (
     <>
@@ -31,7 +31,7 @@ export function Socials() {
           <SiGithub size={25} />
         </a>
       </div>
-      <div className="fixed bottom-0 left-[3.8rem] h-[4.5rem] border-l-2 rounded-sm border-light-secondary dark:border-dark-secondary mt-2 hidden md:block"></div>
+      <div className="fixed bottom-0 left-[3.8rem] h-[4.5rem] border-l-2 rounded-sm border-light-secondary dark:border-dark-primary mt-2 hidden md:block"></div>
     </>
   );
 }
