@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import { IoMenu, IoMoon, IoSunny } from 'react-icons/io5';
 
 const links = [
-  { name: 'Sobre', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Projetos', href: '#projects' },
-  { name: 'Contato', href: '#contact' },
+  { title: 'Sobre', anchorId: '#about' },
+  { title: 'Skills', anchorId: '#skills' },
+  { title: 'Projetos', anchorId: '#projects' },
+  { title: 'Contato', anchorId: '#contact' },
 ];
 
 export function Navbar() {
@@ -22,6 +22,17 @@ export function Navbar() {
   const [theme, setTheme] = useState<'light' | 'dark'>(getPreferredTheme());
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  //Gambiarra pq o shadcn está bugado!!
+  const handleLinkClick = (href: string) => {
+    setMenuOpen(false);
+    setTimeout(() => {
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        targetElement.scrollIntoView();
+      }
+    }, 1);
+  };
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark');
@@ -59,9 +70,9 @@ export function Navbar() {
                 <li key={index}>
                   <a
                     className="hover:underline hover:text-light-primary dark:hover:text-dark-secondary"
-                    href={item.href}
+                    href={item.anchorId}
                   >
-                    {item.name}
+                    {item.title}
                   </a>
                 </li>
               ))}
@@ -89,8 +100,15 @@ export function Navbar() {
               <ul className="flex flex-col gap-4 text-center font-bold text-light-secondary dark:text-dark-primary">
                 {links.map((item, index) => (
                   <li key={index} className="py-2">
-                    <a href={item.href} onClick={() => setMenuOpen(false)}>
-                      {item.name}
+                    <a
+                      href={item.anchorId}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setMenuOpen(false);
+                        handleLinkClick(item.anchorId);
+                      }}
+                    >
+                      {item.title}
                     </a>
                   </li>
                 ))}
