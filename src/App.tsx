@@ -9,6 +9,7 @@ import { Home } from './pages/home';
 import { Projects } from './pages/projects';
 import { SkillsGrid } from './pages/skills';
 import { Toaster } from './components/ui/toaster';
+import { Footer } from './pages/footer';
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ function App() {
         <SkillsGrid skills={skills} />
         <Projects projects={projects} />
         <Contact />
+        <Footer />
         <Socials />
         <Toaster />
       </div>
