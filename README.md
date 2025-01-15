@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+### Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Meu portfólio pessoal desenvolvido com o objetivo de apresentar um pouco sobre mim e meus conhecimentos. Além de mostrar meus projetos ao decorrer de minha jornada dev.
 
-Currently, two official plugins are available:
+#### 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Vite**: Ferramenta de build rápida e moderna para desenvolvimento com React e TypeScript.
+- **Tailwind CSS**: Framework CSS utilitário para construção de layouts responsivos e personalizáveis.
+- **ShadCN UI**: Conjunto de componentes acessíveis e estilizados utilizando Radix e Tailwind.
+- **Zod**: Biblioteca para validação de esquemas e tipos.
+- **React Hook Form**: Gerenciamento de formulários de forma eficiente e sem a necessidade de manter o estado do formulário.
+- **Axios**: Cliente HTTP para fazer requisições.
+- **React Query**: Biblioteca para gerenciamento de dados assíncronos.
+- **EmailJS**: Serviço para envio de emails.
 
-## Expanding the ESLint configuration
+#### ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Modo Dark e Light**: Personalização de temas para diferentes preferências de visualização.
+- **Responsividade**: Layout adaptável para diferentes tamanhos de tela.
+- **Formulário de Contato**: Dedicado para envio de mensagens.
 
-- Configure the top-level `parserOptions` property like this:
+#### 📌 Configuração das Variáveis de Ambiente
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Antes de rodar o projeto, crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
+
+```plaintext
+VITE_EMAILJS_USER_ID=your_public_user_id
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Substitua your_public_user_id, your_service_id e your_template_id pelos valores fornecidos pelo EmailJS.
