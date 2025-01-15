@@ -104,7 +104,6 @@ export function Navbar() {
                       href={item.anchorId}
                       onClick={(e) => {
                         e.preventDefault();
-                        setMenuOpen(false);
                         handleLinkClick(item.anchorId);
                       }}
                     >
