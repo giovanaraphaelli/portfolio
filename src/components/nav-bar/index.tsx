@@ -31,7 +31,7 @@ export function Navbar() {
       if (targetElement) {
         targetElement.scrollIntoView();
       }
-    }, 1);
+    }, 300);
   };
 
   useEffect(() => {
