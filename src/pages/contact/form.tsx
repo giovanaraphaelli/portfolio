@@ -13,8 +13,13 @@ import { useForm } from 'react-hook-form';
 
 import { Button } from '../../components/button';
 import { ContactFormSchema, ContactFormValues } from './contact-form-schema';
+import { useSendEmail } from '@/hooks/use-send-email';
+import { useToast } from '@/hooks/use-toast';
 
 export function ContactForm() {
+  const { mutate, isPending } = useSendEmail();
+  const { toast } = useToast();
+
   const form = useForm({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
@@ -24,9 +29,27 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: ContactFormValues) {
-    console.log('Dados enviados:', values);
+  function onSubmit(data: ContactFormValues) {
+    mutate(data, {
+      onSuccess: () => {
+        form.reset();
+        toast({
+          title: 'Sucesso!',
+          description: 'Mensagem enviada com sucesso.',
+        });
+      },
+      onError: (error: Error) => {
+        form.reset();
+        toast({
+          title: 'Erro!',
+          description: `Falha ao enviar mensagem: ${
+            error.message || 'Tente novamente mais tarde.'
+          }`,
+        });
+      },
+    });
   }
+
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -82,7 +105,9 @@ export function ContactForm() {
           )}
         />
         <div className="flex justify-center">
-          <Button type="submit">enviar</Button>
+          <Button type="submit" disabled={isPending}>
+            {isPending ? 'enviando..' : 'enviar'}
+          </Button>
         </div>
       </form>
     </Form>
