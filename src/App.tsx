@@ -3,6 +3,7 @@ import { Socials } from './components/socials';
 import { projects } from './constants/projects';
 import { skills } from './constants/skills';
 import { About } from './pages/about';
+import { Contact } from './pages/contact';
 import { Home } from './pages/home';
 import { Projects } from './pages/projects';
 import { SkillsGrid } from './pages/skills';
@@ -15,6 +16,7 @@ function App() {
       <About />
       <SkillsGrid skills={skills} />
       <Projects projects={projects} />
+      <Contact />
       <Socials />
     </div>
   );
