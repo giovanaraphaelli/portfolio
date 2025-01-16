@@ -12,7 +12,7 @@ export function Contact() {
             <RiCheckboxMultipleBlankLine />
             <RiCloseLargeFill />
           </div>
-          <div className="py-12 px-6">
+          <div className="w-full py-12 px-6">
             <h2 className="text-xl font-mono font-bold text-center text-light-secondary dark:text-dark-primary mb-6">
               entre em contato comigo!
             </h2>

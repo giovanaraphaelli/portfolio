@@ -56,15 +56,17 @@ export function ContactForm() {
         <FormField
           control={form.control}
           name="name"
-          render={({ field }) => (
+          render={({ field, fieldState }) => (
             <FormItem>
-              <FormLabel className="font-bold text-light-secondary dark:text-dark-primary">
-                Nome
-              </FormLabel>
+              <FormLabel>Nome</FormLabel>
               <FormControl>
-                <Input placeholder="Digite seu nome" {...field} />
+                <Input
+                  placeholder="Digite seu nome"
+                  className={fieldState.error ? 'border-red-500' : ''}
+                  {...field}
+                />
               </FormControl>
-              <FormMessage className="text-red-500" />
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -72,15 +74,18 @@ export function ContactForm() {
         <FormField
           control={form.control}
           name="email"
-          render={({ field }) => (
+          render={({ field, fieldState }) => (
             <FormItem>
-              <FormLabel className="font-bold text-light-secondary dark:text-dark-primary">
-                Email
-              </FormLabel>
+              <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="Digite seu email" {...field} />
+                <Input
+                  type="email"
+                  placeholder="Digite seu email"
+                  className={fieldState.error ? 'border-red-500' : ''}
+                  {...field}
+                />
               </FormControl>
-              <FormMessage className="text-red-500" />
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -88,19 +93,19 @@ export function ContactForm() {
         <FormField
           control={form.control}
           name="message"
-          render={({ field }) => (
+          render={({ field, fieldState }) => (
             <FormItem>
-              <FormLabel className="font-bold text-light-secondary dark:text-dark-primary">
-                Mensagem
-              </FormLabel>
+              <FormLabel>Mensagem</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Digite sua mensagem..."
-                  className="resize-none h-32"
+                  className={`resize-none h-32 ${
+                    fieldState.error ? 'border-red-500' : ''
+                  }`}
                   {...field}
                 />
               </FormControl>
-              <FormMessage className="text-red-500" />
+              <FormMessage />
             </FormItem>
           )}
         />
