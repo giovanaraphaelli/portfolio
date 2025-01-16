@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import ReactMarkdown from 'react-markdown';
 
 export function Layout({
   children,
@@ -14,9 +13,7 @@ export function Layout({
     <div id={id} className="bg-light-background dark:bg-dark-background">
       <div className="container mx-auto h-full lg:h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center pt-20 pb-4 px-4">
         <h2 className="text-subtitle font-mono text-center text-light-primary dark:text-dark-secondary">
-          <ReactMarkdown className="font-mono text-base lg:text-xl text-light-primary dark:text-dark-secondary">
-            {subtitle}
-          </ReactMarkdown>
+          <code>{subtitle}</code>
         </h2>
         {children}
       </div>

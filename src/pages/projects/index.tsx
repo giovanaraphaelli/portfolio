@@ -18,15 +18,9 @@ interface ProjectsProps {
   projects: Project[];
 }
 
-const subtitle = `\
-\`\`\`html
-<!-- projetos -->
-\`\`\`
-`;
-
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <Layout subtitle={subtitle} id="projects">
+    <Layout subtitle="<!-- projetos -->" id="projects">
       <div className="py-6 w-full max-w-screen-lg">
         <Swiper
           slidesPerView={1}

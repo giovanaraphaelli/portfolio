@@ -1,11 +1,4 @@
 import { Button } from '../../components/button';
-import ReactMarkdown from 'react-markdown';
-
-const name = `
-\`\`\`react
-<GiovanaRaphaelli/>
-\`\`\`
-`;
 
 export function Home() {
   return (
@@ -14,9 +7,9 @@ export function Home() {
         <span className="text-lg sm:text-xl md:text-2xl text-light-text dark:text-dark-text animate-slide-up">
           hello word!
         </span>
-        <ReactMarkdown className="font-mono text-3xl md:text-6xl text-light-primary dark:text-dark-secondary">
-          {name}
-        </ReactMarkdown>
+        <code className="font-mono text-3xl md:text-6xl text-light-primary dark:text-dark-secondary">
+          {'<GiovanaRaphaelli/>'}
+        </code>
         <p className="text-2xl md:text-4xl text-light-secondary dark:text-dark-primary ">
           desenvolvedora front-end
         </p>

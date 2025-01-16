@@ -10,15 +10,9 @@ interface SkillsGridProps {
   skills: skill[];
 }
 
-const subtitle = `
-\`\`\`html
-<!-- skills -->
-\`\`\`
-`;
-
 export function SkillsGrid({ skills }: SkillsGridProps) {
   return (
-    <Layout subtitle={subtitle} id="skills">
+    <Layout subtitle="<!-- skills -->" id="skills">
       <div className="grid gap-6 grid-cols-2 lg:grid-cols-4 py-8">
         {skills.map((skill, index) => (
           <div
