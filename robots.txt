@@ -1,0 +1,7 @@
+# Permitindo todos os bots acessarem todo o conteúdo
+User-agent: *
+Disallow:
+
+# Bloqueando um diretório específico
+User-agent: *
+Disallow: /private/

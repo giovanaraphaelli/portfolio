@@ -63,7 +63,6 @@ export function Navbar() {
         </h1>
 
         <div className="flex gap-4">
-          {/* Menu Desktop */}
           <div className="hidden md:flex gap-5 items-center">
             <ul className="flex gap-5 font-bold text-light-secondary dark:text-dark-primary transition-colors duration-300">
               {links.map((item, index) => (
@@ -78,19 +77,17 @@ export function Navbar() {
               ))}
             </ul>
           </div>
-          {/* Botão de troca de tema */}
           <button
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             className="p-2 shadow-md rounded-full bg-light-accent dark:bg-dark-accent text-light-secondary dark:text-dark-primary hover:bg-light-secondary dark:hover:bg-dark-primary hover:text-light-accent dark:hover:text-dark-accent transition-colors duration-300"
           >
             {theme === 'light' ? (
-              <IoMoon className="h-6 w-6" />
+              <IoMoon className="h-6 w-6" aria-label="Tema Dark" />
             ) : (
-              <IoSunny className="h-6 w-6" />
+              <IoSunny className="h-6 w-6" aria-label="Tema Light" />
             )}
           </button>
 
-          {/* Menu Mobile */}
           <Drawer open={menuOpen} onOpenChange={setMenuOpen}>
             <DrawerTrigger className="md:hidden p-2 shadow-md rounded-full bg-light-accent dark:bg-dark-accent text-light-secondary dark:text-dark-primary ">
               <IoMenu className="h-6 w-6" />
