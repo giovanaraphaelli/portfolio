@@ -1,4 +1,4 @@
-import { Button } from '../../components/button';
+import { Button } from '@/components/ui/button';
 
 export function Home() {
   return (
@@ -13,7 +13,7 @@ export function Home() {
         <p className="text-2xl md:text-4xl text-light-secondary dark:text-dark-primary ">
           desenvolvedora front-end
         </p>
-        <Button>
+        <Button variant="outline">
           <a href="cv_giovanaraphaelli.pdf" target="_blank">
             download CV
           </a>

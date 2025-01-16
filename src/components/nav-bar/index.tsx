@@ -1,6 +1,7 @@
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer';
 import { useEffect, useState } from 'react';
 import { IoMenu, IoMoon, IoSunny } from 'react-icons/io5';
+import { Button } from '../ui/button';
 
 const links = [
   { title: 'Sobre', anchorId: '#about' },
@@ -64,15 +65,12 @@ export function Navbar() {
 
         <div className="flex gap-4">
           <div className="hidden md:flex gap-5 items-center">
-            <ul className="flex gap-5 font-bold text-light-secondary dark:text-dark-primary transition-colors duration-300">
+            <ul className="flex gap-2 ">
               {links.map((item, index) => (
                 <li key={index}>
-                  <a
-                    className="hover:underline hover:text-light-primary dark:hover:text-dark-secondary"
-                    href={item.anchorId}
-                  >
-                    {item.title}
-                  </a>
+                  <Button variant="link" size="md">
+                    <a href={item.anchorId}>{item.title}</a>
+                  </Button>
                 </li>
               ))}
             </ul>

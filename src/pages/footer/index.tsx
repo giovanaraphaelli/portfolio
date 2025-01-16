@@ -12,16 +12,19 @@ export function Footer() {
             href="mailto:giovanaraphaelli@outlook.com"
             icon={<MdEmail />}
             label="E-mail"
+            variant="secondary"
           />
           <SocialLink
             href="https://www.linkedin.com/in/giovanaraphaelli"
             icon={<FaLinkedin />}
             label="Linkedin"
+            variant="secondary"
           />
           <SocialLink
             href="https://github.com/giovanaraphaelli"
             icon={<SiGithub />}
             label="Github"
+            variant="secondary"
           />
         </div>
         <p className="text-mono text-sm text-light-text dark:text-dark-text">

@@ -11,7 +11,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 
-import { Button } from '../../components/button';
+import { Button } from '@/components/ui/button';
 import { ContactFormSchema, ContactFormValues } from './contact-form-schema';
 import { useSendEmail } from '@/hooks/use-send-email';
 import { useToast } from '@/hooks/use-toast';
