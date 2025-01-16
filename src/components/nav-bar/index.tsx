@@ -58,7 +58,6 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
         <h1 className="text-sm font-bold text-light-primary dark:text-dark-secondary">
           <a href="#home">@giovanaraphaelli</a>
         </h1>
@@ -90,20 +89,20 @@ export function Navbar() {
             <DrawerTrigger className="md:hidden p-2 shadow-md rounded-full bg-light-accent dark:bg-dark-accent text-light-secondary dark:text-dark-primary ">
               <IoMenu className="h-6 w-6" />
             </DrawerTrigger>
-            <DrawerContent className="bg-light-surface dark:bg-dark-surface">
-              <div className="flex justify-between items-center px-5 py-4"></div>
-              <ul className="flex flex-col gap-4 text-center font-bold text-light-secondary dark:text-dark-primary">
+            <DrawerContent>
+              <ul className="flex flex-col gap-4 items-center">
                 {links.map((item, index) => (
-                  <li key={index} className="py-2">
-                    <a
-                      href={item.anchorId}
+                  <li key={index}>
+                    <Button
+                      variant="link"
+                      size="md"
                       onClick={(e) => {
                         e.preventDefault();
                         handleLinkClick(item.anchorId);
                       }}
                     >
-                      {item.title}
-                    </a>
+                      <a href={item.anchorId}>{item.title}</a>
+                    </Button>
                   </li>
                 ))}
               </ul>
