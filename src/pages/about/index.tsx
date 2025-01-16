@@ -22,7 +22,7 @@ export function About() {
         <div className="flex items-center flex-col gap-6">
           <img
             className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-60 lg:h-60 rounded-full border-2 shadow-md border-light-secondary dark:border-dark-secondary"
-            src="perfil.png"
+            src="profile.jpg"
             alt="Profile"
           />
           <div ref={ref}>
