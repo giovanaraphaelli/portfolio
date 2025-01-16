@@ -1,38 +1,23 @@
-import ReactMarkdown from 'react-markdown';
+import { useInView } from 'react-intersection-observer';
 import { Layout } from '../../components/layout';
+import { useTypingEffect } from '@/hooks/use-typing-effect';
 
-const profile = `
-\`\`\`css
-.perfil {
-  nome: Giovana Raphaelli,
-  idade: 25 anos,
-  local: São Paulo - SP,
-  área: Front-End
-}
-\`\`\`
-`;
-
-const education = `
-\`\`\`css
-/* formação */
-\`\`\`
-`;
-
-const experience = `
-\`\`\`css
-/* experiência */
-\`\`\`
-`;
-
-const subtitle = `
-\`\`\`html
-<!-- sobre mim -->
-\`\`\`
+const fullProfile = `
+const perfil = {
+  nome: 'Giovana Raphaelli',
+  idade: 25,
+  local: 'São Paulo - SP',
+  area: 'Front-End',
+};
 `;
 
 export function About() {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
+
+  const typedText = useTypingEffect(fullProfile, 20, inView);
+
   return (
-    <Layout subtitle={subtitle} id="about">
+    <Layout subtitle="<!-- sobre mim -->" id="about">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 max-w-6xl">
         <div className="flex items-center flex-col gap-6">
           <img
@@ -40,9 +25,11 @@ export function About() {
             src="perfil.png"
             alt="Profile"
           />
-          <ReactMarkdown className="font-mono text-base lg:text-xl text-light-primary dark:text-dark-secondary">
-            {profile}
-          </ReactMarkdown>
+          <div ref={ref}>
+            <pre className="font-mono text-base font-medium text-light-primary dark:text-dark-secondary min-w-[17rem] text-left">
+              <code>{typedText}</code>
+            </pre>
+          </div>
         </div>
 
         <div className="flex flex-col gap-6 justify-center">
@@ -58,9 +45,9 @@ export function About() {
           </p>
 
           <div>
-            <ReactMarkdown className="font-mono text-xl font-medium tracking-widest text-light-secondary dark:text-dark-primary">
-              {education}
-            </ReactMarkdown>
+            <code className="font-mono text-xl font-medium tracking-widest text-light-secondary dark:text-dark-primary">
+              /* formação */
+            </code>
             <ul className="py-2 list-disc text-light-text dark:text-dark-text">
               <li className="ml-6">
                 <span className="text-base font-bold">
@@ -75,9 +62,9 @@ export function About() {
           </div>
 
           <div>
-            <ReactMarkdown className="font-mono text-xl font-medium tracking-widest text-light-secondary dark:text-dark-primary">
-              {experience}
-            </ReactMarkdown>
+            <code className="font-mono text-xl font-medium tracking-widest text-light-secondary dark:text-dark-primary">
+              /* experiência */
+            </code>
             <ul className="py-2 list-disc text-light-text dark:text-dark-text">
               <li className="ml-6 mb-2">
                 <span className="text-base font-bold">
