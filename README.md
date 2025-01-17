@@ -1,8 +1,8 @@
-### Meu Portfólio
+## Meu Portfólio
 
 Meu portfólio pessoal desenvolvido com o objetivo de apresentar um pouco sobre mim e meus conhecimentos. Além de mostrar meus projetos ao decorrer de minha jornada dev.
 
-#### 🚀 Tecnologias Utilizadas
+### 🚀 Tecnologias Utilizadas
 
 - **React**: Biblioteca JavaScript para construção da interface de usuário.
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
@@ -15,13 +15,13 @@ Meu portfólio pessoal desenvolvido com o objetivo de apresentar um pouco sobre 
 - **React Query**: Biblioteca para gerenciamento de dados assíncronos.
 - **EmailJS**: Serviço para envio de emails.
 
-#### ✨ Funcionalidades
+### ✨ Funcionalidades
 
 - **Modo Dark e Light**: Personalização de temas para diferentes preferências de visualização.
 - **Responsividade**: Layout adaptável para diferentes tamanhos de tela.
 - **Formulário de Contato**: Dedicado para envio de mensagens.
 
-#### 📌 Configuração das Variáveis de Ambiente
+### 📌 Configuração das Variáveis de Ambiente
 
 Antes de rodar o projeto, crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
 
