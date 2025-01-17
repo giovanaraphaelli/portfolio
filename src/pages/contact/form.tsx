@@ -13,7 +13,7 @@ import { useForm } from 'react-hook-form';
 
 import { Button } from '@/components/ui/button';
 import { ContactFormSchema, ContactFormValues } from './contact-form-schema';
-import { useSendEmail } from '@/hooks/use-send-email';
+import { useSendEmail } from '@/hooks/mutations/use-send-email';
 import { useToast } from '@/hooks/use-toast';
 
 export function ContactForm() {
@@ -42,9 +42,8 @@ export function ContactForm() {
         form.reset();
         toast({
           title: 'Erro!',
-          description: `Falha ao enviar mensagem: ${
-            error.message || 'Tente novamente mais tarde.'
-          }`,
+          description: `Falha ao enviar mensagem: ${error.message}.`,
+          variant: 'destructive',
         });
       },
     });
@@ -62,7 +61,9 @@ export function ContactForm() {
               <FormControl>
                 <Input
                   placeholder="Digite seu nome"
-                  className={fieldState.error ? 'border-red-500' : ''}
+                  className={
+                    fieldState.error ? 'border-red-600 dark:border-red-600' : ''
+                  }
                   {...field}
                 />
               </FormControl>
@@ -81,7 +82,9 @@ export function ContactForm() {
                 <Input
                   type="email"
                   placeholder="Digite seu email"
-                  className={fieldState.error ? 'border-red-500' : ''}
+                  className={
+                    fieldState.error ? 'border-red-600 dark:border-red-600' : ''
+                  }
                   {...field}
                 />
               </FormControl>
@@ -100,7 +103,7 @@ export function ContactForm() {
                 <Textarea
                   placeholder="Digite sua mensagem..."
                   className={`resize-none h-32 ${
-                    fieldState.error ? 'border-red-500' : ''
+                    fieldState.error ? 'border-red-600 dark:border-red-600' : ''
                   }`}
                   {...field}
                 />
