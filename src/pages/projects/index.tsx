@@ -1,17 +1,14 @@
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Layout } from '../../components/layout';
 
-interface Stack {
-  name: string;
-}
-
 interface Project {
   title: string;
   description: string;
   img: string;
-  stacks: Stack[];
+  stacks: string[];
   link: string;
 }
 interface ProjectsProps {
@@ -31,40 +28,44 @@ export function Projects({ projects }: ProjectsProps) {
           }}
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 40 },
-            1024: { slidesPerView: 3, spaceBetween: 50 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
           modules={[Pagination]}
-          className="mySwiper h-[27.5rem]"
+          className="mySwiper h-full"
         >
           {projects.map((project, index) => (
             <SwiperSlide
               key={index}
-              className="bg-light-surface dark:bg-dark-surface rounded-md shadow-md flex flex-col"
+              className="bg-light-surface dark:bg-dark-surface rounded-md shadow-md border border-light-accent dark:border-dark-accent"
             >
-              <a href={project.link} target="_blank">
+              <div className="flex flex-col h-full">
                 <img
                   src={project.img}
                   alt={project.title}
                   className="h-[12.5rem] w-full rounded-t-md object-cover object-center"
                 />
-              </a>
-              <div className="p-4 flex flex-col gap-2 flex-1 h-[14.5rem]">
-                <h3 className="text-light-secondary dark:text-dark-primary text-xl font-bold">
-                  {project.title}
-                </h3>
-                <p className="flex-1 text-sm text-light-text dark:text-dark-text line-clamp-6">
-                  {project.description}
-                </p>
-                <div className="flex gap-1 flex-wrap pt-3">
-                  {project.stacks.map((stack, i) => (
-                    <span
-                      key={i}
-                      className="py-0.5 px-2 font-bold border text-xs rounded-xl text-light-text border-light-text dark:text-dark-text dark:border-dark-text"
-                    >
-                      {stack.name}
-                    </span>
-                  ))}
+
+                <div className="px-4 py-6 flex flex-col flex-1 gap-2 min-h-[15rem]">
+                  <a href={project.link} target="_blank">
+                    <h3 className="text-light-secondary dark:text-dark-primary hover:text-light-primary dark:hover:text-dark-secondary text-xl font-bold w-full flex gap-2 items-center transition-colors duration-300">
+                      {project.title}
+                      <FaExternalLinkAlt className="text-xs" />
+                    </h3>
+                  </a>
+                  <p className="flex-1 text-sm text-light-text dark:text-dark-text">
+                    {project.description}
+                  </p>
+                  <div className="flex gap-1 flex-wrap mt-auto">
+                    {project.stacks.map((stack, i) => (
+                      <span
+                        key={i}
+                        className="py-0.5 px-2 font-bold border text-xs rounded-xl text-light-text border-light-text dark:text-dark-text dark:border-dark-text"
+                      >
+                        {stack}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
