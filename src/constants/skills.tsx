@@ -8,6 +8,7 @@ import {
 } from 'react-icons/ri';
 import { SiStyledcomponents } from 'react-icons/si';
 import { TbBrandTypescript } from 'react-icons/tb';
+import { FaGitAlt } from 'react-icons/fa';
 
 export const skills = [
   { name: 'React', icon: <FaReact /> },
@@ -18,4 +19,5 @@ export const skills = [
   { name: 'CSS', icon: <IoLogoCss3 /> },
   { name: 'Tailwind', icon: <RiTailwindCssFill /> },
   { name: 'Styled Components', icon: <SiStyledcomponents /> },
+  { name: 'Git', icon: <FaGitAlt /> },
 ];

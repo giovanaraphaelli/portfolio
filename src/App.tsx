@@ -20,8 +20,8 @@ function App() {
         <Navbar />
         <Home />
         <About />
-        <SkillsGrid skills={skills} />
         <Projects projects={projects} />
+        <SkillsGrid skills={skills} />
         <Contact />
         <Footer />
         <Socials />

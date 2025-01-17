@@ -5,8 +5,8 @@ import { Button } from '../ui/button';
 
 const links = [
   { title: 'Sobre', anchorId: '#about' },
-  { title: 'Skills', anchorId: '#skills' },
   { title: 'Projetos', anchorId: '#projects' },
+  { title: 'Skills', anchorId: '#skills' },
   { title: 'Contato', anchorId: '#contact' },
 ];
 
