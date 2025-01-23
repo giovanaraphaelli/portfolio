@@ -2,11 +2,14 @@
 
 Meu portfólio pessoal desenvolvido com o objetivo de apresentar um pouco sobre mim e meus conhecimentos. Além de mostrar meus projetos ao decorrer de minha jornada dev.
 
+![Resultado final do projeto](./public/portfolio.gif)
+
+<h4 align="center"><a href="https://giovanaraphaelli.tech">Clique para visitar o projeto</a></h4>
+
 ### 🚀 Tecnologias Utilizadas
 
 - **React**: Biblioteca JavaScript para construção da interface de usuário.
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
-- **Vite**: Ferramenta de build rápida e moderna para desenvolvimento com React e TypeScript.
 - **Tailwind CSS**: Framework CSS utilitário para construção de layouts responsivos e personalizáveis.
 - **ShadCN UI**: Conjunto de componentes acessíveis e estilizados utilizando Radix e Tailwind.
 - **Zod**: Biblioteca para validação de esquemas e tipos.
