@@ -28,7 +28,7 @@ export function Footer() {
           />
         </div>
         <p className="text-mono text-sm text-light-text dark:text-dark-text">
-          desenvolvido por
+          desenvolvido com ❤️ por
           <span className="font-bold"> @giovanaraphaelli</span>
         </p>
       </div>
