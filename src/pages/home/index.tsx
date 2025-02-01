@@ -20,7 +20,7 @@ export function Home() {
           </a>
         </Button>
 
-        <RiArrowDownDoubleFill className="absolute bottom-5 text-4xl animate-bounce" />
+        <RiArrowDownDoubleFill className="absolute bottom-5 text-4xl animate-bounce text-light-secondary dark:text-dark-primary" />
       </div>
     </div>
   );
