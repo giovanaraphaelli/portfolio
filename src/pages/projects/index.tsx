@@ -1,4 +1,4 @@
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaLink } from 'react-icons/fa';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -9,7 +9,8 @@ interface Project {
   description: string;
   img: string;
   stacks: string[];
-  link: string;
+  repo: string;
+  demo: string;
 }
 interface ProjectsProps {
   projects: Project[];
@@ -46,16 +47,32 @@ export function Projects({ projects }: ProjectsProps) {
                   className="h-[12.5rem] w-full rounded-t-md object-cover object-center"
                 />
 
-                <div className="px-4 py-6 flex flex-col flex-1 gap-2 min-h-[15rem]">
-                  <a href={project.link} target="_blank">
-                    <h3 className="text-light-secondary dark:text-dark-primary hover:text-light-primary dark:hover:text-dark-secondary text-xl font-bold w-full flex gap-2 items-center transition-colors duration-300">
-                      {project.title}
-                      <FaExternalLinkAlt className="text-xs" />
-                    </h3>
-                  </a>
+                <div className="px-4 pt-2 pb-4 placeholder-blue-400 flex flex-col flex-1 gap-2 min-h-[15rem]">
+                  <h3 className="text-light-primary dark:text-dark-secondary text-xl font-bold">
+                    {project.title}
+                  </h3>
+                  <div className="flex gap-3 text-sm text-light-secondary dark:text-dark-primary font-bold ">
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      className="flex items-center gap-1 hover:underline"
+                    >
+                      <FaGithub /> Repositório
+                    </a>
+
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="flex items-center gap-1 hover:underline"
+                    >
+                      <FaLink /> Demo
+                    </a>
+                  </div>
+
                   <p className="flex-1 text-sm text-light-text dark:text-dark-text">
                     {project.description}
                   </p>
+
                   <div className="flex gap-1 flex-wrap mt-auto">
                     {project.stacks.map((stack, i) => (
                       <span
