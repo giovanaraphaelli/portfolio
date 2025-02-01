@@ -26,75 +26,35 @@ export function About() {
             alt="Profile"
           />
           <div ref={ref}>
-            <pre className="font-mono text-base font-medium text-light-primary dark:text-dark-secondary min-w-[17rem] text-left">
+            <pre className="font-mono text-base font-medium text-light-primary dark:text-dark-secondary min-w-[17rem] min-h-[12rem] text-left">
               <code>{typedText}</code>
             </pre>
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 justify-center">
+        <div className="flex flex-col gap-4 justify-center">
           <p className="text-base font-medium text-light-text dark:text-dark-text">
-            Sou Desenvolvedora Front-End, apaixonada por criar interfaces
-            intuitivas e bem estruturadas com React e TypeScript.
-            <br />
-            Tenho experiência com testes automatizados, boas práticas de código
-            e otimização de performance.
-            <br />
-            Sempre busco desenvolver soluções eficientes que proporcionem a
-            melhor experiência para os usuários. 🚀
+            Sou desenvolvedora front-end com foco em criar interfaces intuitivas
+            e performáticas. Gosto de resolver problemas e aprimorar minhas
+            habilidades, sempre buscando novos desafios no mundo da tecnologia!
           </p>
-
-          <div>
-            <code className="font-mono text-xl font-medium tracking-widest text-light-secondary dark:text-dark-primary">
-              /* formação */
-            </code>
-            <ul className="py-2 list-disc text-light-text dark:text-dark-text">
-              <li className="ml-6">
-                <span className="text-base font-bold">
-                  Análise e Desenvolvimento de Sistemas
-                </span>
-                <br />
-                <span className="text-base">
-                  Universidade Cruzeiro do Sul, 2021-2023
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <code className="font-mono text-xl font-medium tracking-widest text-light-secondary dark:text-dark-primary">
-              /* experiência */
-            </code>
-            <ul className="py-2 list-disc text-light-text dark:text-dark-text">
-              <li className="ml-6 mb-2">
-                <span className="text-base font-bold">
-                  Analista de Desenvolvimento de Software Jr
-                </span>
-                <br />
-                <span className="text-base">Cromai, out/2022 - jan/2025</span>
-              </li>
-
-              <li className="ml-6 mb-2">
-                <span className="text-base font-bold">
-                  Desenvolvedora WEB Trainee
-                </span>
-                <br />
-                <span className="text-base">
-                  Fac. Oswaldo Cruz, fev/2022 - out/2022
-                </span>
-              </li>
-
-              <li className="ml-6 mb-2">
-                <span className="text-base font-bold">
-                  Estágio Suporte T.I.
-                </span>
-                <br />
-                <span className="text-base">
-                  Fac. Oswaldo Cruz, mai/2021 - jan/2022
-                </span>
-              </li>
-            </ul>
-          </div>
+          <p className="text-base font-medium text-light-text dark:text-dark-text">
+            Minha trajetória começou em 2021, quando iniciei a faculdade de
+            Análise e Desenvolvimento de Sistemas e logo entrei no mercado,
+            evoluindo de Estagiária de Suporte de TI para Analista de
+            Desenvolvimento de Software.
+          </p>
+          <p className="text-base font-medium text-light-text dark:text-dark-text">
+            Ao longo do tempo, me especializei no desenvolvimento front-end,
+            trabalhando com aplicações escaláveis, testes e boas práticas.
+            Embora minha experiência seja principalmente em React, estou sempre
+            expandindo meu conhecimento e explorando novas tecnologias.
+          </p>
+          <p className="text-base font-medium text-light-text dark:text-dark-text">
+            Fora da tecnologia, sou apaixonada por música e gatos. Nas horas
+            vagas, adoro assistir filmes e séries, além de me perder nas páginas
+            de livros de ficção.
+          </p>
         </div>
       </div>
     </Layout>
