@@ -2,7 +2,7 @@
 
 Meu portfólio pessoal desenvolvido com o objetivo de apresentar um pouco sobre mim e meus conhecimentos. Além de mostrar meus projetos ao decorrer de minha jornada dev.
 
-![Resultado final do projeto](./public/portfolio.gif)
+![Resultado final](./public/portfolio.gif)
 
 <h4 align="center"><a href="https://giovanaraphaelli.tech">Clique para visitar o projeto</a></h4>
 
