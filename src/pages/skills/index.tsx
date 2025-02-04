@@ -24,7 +24,7 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
     <Layout subtitle="<!-- habilidades -->" id="skills">
       <div
         ref={ref}
-        className="flex flex-wrap justify-center gap-4 py-8 max-w-2xl mx-auto"
+        className="flex flex-wrap justify-center gap-4 py-8 max-w-xl mx-auto"
       >
         {skills.map((skill, index) => (
           <TooltipProvider key={index} delayDuration={200}>
