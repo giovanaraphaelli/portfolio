@@ -11,11 +11,6 @@ const links = [
 
 const borderClass = 'border border-light-secondary/40 dark:border-dark-secondary/30';
 
-const availabilityDate = new Intl.DateTimeFormat('pt-BR', { month: 'short', year: 'numeric' })
-  .format(new Date())
-  .replace('.', '')
-  .toLowerCase();
-
 export function Navbar() {
   const getPreferredTheme = (): 'light' | 'dark' => {
     if (localStorage.getItem('theme')) {

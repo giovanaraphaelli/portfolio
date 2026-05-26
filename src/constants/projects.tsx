@@ -18,7 +18,7 @@ export const projects = [
     repo: 'https://github.com/giovanaraphaelli/met-museum',
     demo: 'https://met-museum.giovanaraphaelli.tech/',
     category: 'projeto experimental',
-    year: '2024',
+    year: '2025',
   },
   {
     title: 'GitHub Blog',
