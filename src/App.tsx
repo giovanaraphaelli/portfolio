@@ -2,15 +2,14 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Navbar } from './components/nav-bar';
 import { Socials } from './components/socials';
 import { projects } from './constants/projects';
-import { skills } from './constants/skills';
 import { About } from './pages/about';
 import { Contact } from './pages/contact';
 import { Home } from './pages/home';
 import { Projects } from './pages/projects';
+import { Experience } from './pages/experience';
+import { Stack } from './pages/skills';
 import { Toaster } from './components/ui/toaster';
 import { Footer } from './pages/footer';
-import { SkillsGrid } from './pages/skills';
-import { Experience } from './pages/experience';
 
 const queryClient = new QueryClient();
 
@@ -23,7 +22,7 @@ function App() {
         <About />
         <Projects projects={projects} />
         <Experience />
-        <SkillsGrid skills={skills} />
+        <Stack />
         <Contact />
         <Footer />
         <Socials />

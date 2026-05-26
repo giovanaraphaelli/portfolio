@@ -1,58 +1,43 @@
-import { ReactNode } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { Layout } from '../../components/layout';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+import { SectionHeader } from '@/components/section-header';
+import { skillCategories } from '@/constants/skills';
 
-interface Skill {
-  name: string;
-  icon: ReactNode;
-}
-
-interface SkillsGridProps {
-  skills: Skill[];
-}
-
-export function SkillsGrid({ skills }: SkillsGridProps) {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
-
+export function Stack() {
   return (
-    <Layout subtitle="<!-- habilidades -->" id="skills">
-      <div
-        ref={ref}
-        className="flex flex-wrap justify-center gap-4 py-8 max-w-xl mx-auto"
-      >
-        {skills.map((skill, index) => (
-          <TooltipProvider key={index} delayDuration={200}>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <div
-                  className={`flex flex-col gap-1 items-center justify-center p-4 sm:p-6 rounded-lg bg-light-surface dark:bg-dark-surface shadow-xl opacity-0 transition-all duration-500 ${
-                    inView ? 'animate-fade-in-up' : ''
-                  } w-[6rem] h-[6rem]`}
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div className="text-6xl text-light-secondary dark:text-dark-primary">
-                    {skill.icon}
-                  </div>
-                  <p className="md:hidden text-xs text-center text-light-secondary dark:text-dark-primary">
-                    {skill.name}
-                  </p>
-                </div>
-              </TooltipTrigger>
-              <TooltipContent side="top">
-                <span className="sm:hidden md:block text-sm font-bold bg-light-secondary dark:bg-dark-primary text-light-surface dark:text-dark-surface px-2 py-1 rounded-lg">
-                  {skill.name}
-                </span>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        ))}
+    <div id="skills" className="bg-light-background dark:bg-dark-background">
+      <div className="container mx-auto px-6 py-12 md:pt-20 md:pb-20">
+        <SectionHeader
+          number="04"
+          subtitle="ferramentas que uso bem"
+          title="Stack"
+        />
+
+        <div className="border border-light-secondary/20 dark:border-dark-secondary/20 rounded-2xl overflow-hidden mt-10 md:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-light-secondary/20 dark:divide-dark-secondary/20">
+            {skillCategories.map((category, i) => (
+              <div
+                key={i}
+                className="p-6 md:p-8 flex flex-col gap-5"
+              >
+                <p className="font-mono text-xs md:text-sm text-light-secondary dark:text-dark-secondary">
+               - {category.label}
+                </p>
+
+                <ul className="flex flex-col gap-3">
+                  {category.items.map((item, j) => (
+                    <li
+                      key={j}
+                      className="flex items-center gap-2.5 text-sm text-light-primary dark:text-dark-highlight"
+                    >
+                      <div className="w-1 h-1 rounded-full bg-light-secondary/50 dark:bg-dark-highlight flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </Layout>
+    </div>
   );
 }
