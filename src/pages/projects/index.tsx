@@ -12,7 +12,7 @@ interface ProjectsProps {
 
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <div id="projects" className="bg-light-background dark:bg-dark-background">
+    <div id="projects" className="bg-light-background dark:bg-dark-background border-b border-light-secondary/25 dark:border-dark-secondary/20">
       <div className="container mx-auto px-6 py-12 md:pt-20 md:pb-0">
         <SectionHeader
           number="02"

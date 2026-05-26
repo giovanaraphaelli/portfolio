@@ -3,7 +3,7 @@ import { skillCategories } from '@/constants/skills';
 
 export function Stack() {
   return (
-    <div id="skills" className="bg-light-background dark:bg-dark-background">
+    <div id="skills" className="bg-light-background dark:bg-dark-background border-b border-light-secondary/25 dark:border-dark-secondary/20">
       <div className="container mx-auto px-6 py-12 md:pt-20 md:pb-20">
         <SectionHeader
           number="04"

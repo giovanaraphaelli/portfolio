@@ -2,7 +2,7 @@ import { SectionHeader } from '@/components/section-header';
 
 export function About() {
   return (
-    <div id="about" className="bg-light-background dark:bg-dark-background">
+    <div id="about" className="bg-light-background dark:bg-dark-background border-b border-light-secondary/25 dark:border-dark-secondary/20">
       <div className="container mx-auto px-6 py-12 md:py-20">
         <SectionHeader
           number="01"

@@ -1,6 +1,6 @@
 export function Home() {
   return (
-    <div id="home" className="bg-light-background dark:bg-dark-background min-h-screen flex flex-col">
+    <div id="home" className="bg-light-background dark:bg-dark-background min-h-screen flex flex-col border-b border-light-secondary/25 dark:border-dark-secondary/20">
       {/* Bloco de texto centralizado verticalmente */}
       <div className="container mx-auto px-6 flex-1 flex flex-col justify-center gap-5 md:gap-8 pt-24 pb-8">
         <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary">
