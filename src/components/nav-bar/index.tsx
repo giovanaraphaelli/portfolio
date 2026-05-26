@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { IoMoon, IoSunny } from 'react-icons/io5';
 
 const links = [
-  { title: 'trabalho', anchorId: '#projects' },
   { title: 'sobre', anchorId: '#about' },
+  { title: 'trabalho', anchorId: '#projects' },
   { title: 'experiência', anchorId: '#skills' },
   { title: 'contato', anchorId: '#contact' },
 ];
