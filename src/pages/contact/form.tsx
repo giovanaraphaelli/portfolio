@@ -112,11 +112,13 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <div className="flex justify-center">
-          <Button type="submit" disabled={isPending}>
-            {isPending ? 'enviando..' : 'enviar'}
-          </Button>
-        </div>
+        <Button
+          type="submit"
+          disabled={isPending}
+          className="w-full font-mono bg-light-primary dark:bg-dark-primary text-white dark:text-dark-background hover:opacity-90 transition-opacity"
+        >
+          {isPending ? 'enviando...' : 'enviar'}
+        </Button>
       </form>
     </Form>
   );
