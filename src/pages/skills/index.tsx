@@ -22,7 +22,7 @@ export function Stack() {
                - {category.label}
                 </p>
 
-                <ul className="flex flex-col gap-3">
+                <ul className="grid grid-cols-2 md:grid-cols-1 gap-3">
                   {category.items.map((item, j) => (
                     <li
                       key={j}
