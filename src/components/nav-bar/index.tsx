@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { IoMoon, IoSunny } from 'react-icons/io5';
 
 const links = [
   { title: 'trabalho', anchorId: '#projects' },
@@ -7,7 +8,12 @@ const links = [
   { title: 'contato', anchorId: '#contact' },
 ];
 
-const borderClass = 'border border-light-secondary/40 dark:border-dark-accent';
+const borderClass = 'border border-light-secondary/40 dark:border-dark-secondary/30';
+
+const availabilityDate = new Intl.DateTimeFormat('pt-BR', { month: 'short', year: 'numeric' })
+  .format(new Date())
+  .replace('.', '')
+  .toLowerCase();
 
 export function Navbar() {
   const getPreferredTheme = (): 'light' | 'dark' => {
@@ -50,7 +56,7 @@ export function Navbar() {
               <li key={index}>
                 <a
                   href={item.anchorId}
-                  className="text-base text-light-primary dark:text-dark-text hover:text-light-secondary dark:hover:text-dark-secondary transition-colors"
+                  className="text-base text-light-primary dark:text-dark-secondary hover:text-light-secondary dark:hover:text-dark-highlight transition-colors"
                 >
                   {item.title}
                 </a>
@@ -59,21 +65,21 @@ export function Navbar() {
           </ul>
 
           <div className="flex items-center gap-3">
-            <div className={`hidden md:flex items-center gap-2 px-4 py-2 rounded-full ${borderClass} text-sm text-light-primary dark:text-dark-text`}>
-              <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" />
-              disponivel para projetos · jul 2026
+            <div className="hidden md:flex items-center gap-2 px-2 rounded-full bg-light-accent dark:bg-dark-surface text-sm text-light-primary dark:text-dark-secondary py-0.5">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-blink flex-shrink-0" />
+              disponivel para projetos · {availabilityDate}
             </div>
 
-            <span className={`hidden md:flex w-9 h-9 items-center justify-center rounded-full ${borderClass} text-sm text-light-secondary dark:text-dark-text select-none`}>
+            <span className={`hidden md:flex w-9 h-9 items-center justify-center rounded-full ${borderClass} text-sm text-light-secondary dark:text-dark-secondary select-none`}>
               en
             </span>
 
             <button
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
               aria-label="Alternar tema"
-              className={`hidden md:flex w-9 h-9 items-center justify-center rounded-full ${borderClass} text-base text-light-secondary dark:text-dark-text hover:text-light-primary dark:hover:text-dark-highlight transition-colors`}
+              className={`hidden md:flex w-9 h-9 items-center justify-center rounded-full ${borderClass} text-light-secondary dark:text-dark-secondary hover:text-light-primary dark:hover:text-dark-highlight transition-colors`}
             >
-              ✦
+              {theme === 'light' ? <IoMoon size={16} /> : <IoSunny size={16} />}
             </button>
 
             <button
@@ -103,7 +109,7 @@ export function Navbar() {
           <div className="flex-1 flex flex-col justify-center px-8">
             <ul className="flex flex-col">
               {links.map((item, index) => (
-                <li key={index} className="border-b border-light-secondary/20 dark:border-dark-accent">
+                <li key={index} className="border-b border-light-secondary/20 dark:border-dark-secondary/30">
                   <a
                     href={item.anchorId}
                     onClick={() => setMenuOpen(false)}
@@ -117,9 +123,9 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center justify-center gap-3 px-6 pb-10">
-            <div className={`flex items-center gap-2 px-4 py-2 rounded-full ${borderClass} text-sm text-light-primary dark:text-dark-text`}>
-              <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" />
-              disponivel · jul 2026
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-light-accent dark:bg-dark-surface text-sm text-light-primary dark:text-dark-secondary py-1">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-blink flex-shrink-0" />
+              disponivel · {availabilityDate}
             </div>
 
             <span className={`w-10 h-10 flex items-center justify-center rounded-full ${borderClass} text-sm text-light-secondary dark:text-dark-text select-none`}>
@@ -129,9 +135,9 @@ export function Navbar() {
             <button
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
               aria-label="Alternar tema"
-              className={`w-10 h-10 flex items-center justify-center rounded-full ${borderClass} text-base text-light-secondary dark:text-dark-text hover:text-light-primary dark:hover:text-dark-highlight transition-colors`}
+              className={`w-10 h-10 flex items-center justify-center rounded-full ${borderClass} text-light-secondary dark:text-dark-secondary hover:text-light-primary dark:hover:text-dark-highlight transition-colors`}
             >
-              ✦
+              {theme === 'light' ? <IoMoon size={16} /> : <IoSunny size={16} />}
             </button>
           </div>
         </div>
