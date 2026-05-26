@@ -40,7 +40,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 bg-light-background dark:bg-dark-background">
+      <nav className="fixed top-0 w-full z-50 bg-light-background dark:bg-dark-background border-b border-light-secondary/25 dark:border-dark-secondary/20">
         <div className="container mx-auto px-6 py-3 flex justify-between items-center">
           <a href="#home" className="flex items-center gap-3">
             <span className="text-base font-bold text-light-primary dark:text-dark-highlight">

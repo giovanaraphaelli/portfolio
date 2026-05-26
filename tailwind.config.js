@@ -7,6 +7,7 @@ export default {
       fontFamily: {
         sans: ['Karla', 'sans-serif'],
         mono: ['IBM Plex Mono', 'mono'],
+        serif: ['Instrument Serif', 'serif'],
       },
       fontSize: {
         subtitle: [
