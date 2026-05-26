@@ -4,7 +4,8 @@ import { IoMoon, IoSunny } from 'react-icons/io5';
 const links = [
   { title: 'sobre', anchorId: '#about' },
   { title: 'trabalho', anchorId: '#projects' },
-  { title: 'experiência', anchorId: '#skills' },
+  { title: 'experiência', anchorId: '#experience' },
+  { title: 'stack', anchorId: '#skills' },
   { title: 'contato', anchorId: '#contact' },
 ];
 
@@ -123,7 +124,7 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center justify-center gap-3 px-6 pb-10">
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-light-accent dark:bg-dark-surface text-sm text-light-primary dark:text-dark-secondary py-1">
+            <div className="flex items-center gap-2 px-4 rounded-full bg-light-accent dark:bg-dark-surface text-sm text-light-primary dark:text-dark-secondary py-1">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-blink flex-shrink-0" />
               disponivel · {availabilityDate}
             </div>
