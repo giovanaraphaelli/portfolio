@@ -21,18 +21,11 @@ export const experiences: Experience[] = [
       'Plataforma de gestão de produção rural. Novas features e manutenção com React e TypeScript.',
   },
   {
-    period: 'ago 2023 — jan 2025',
-    role: 'Desenvolvedora Front-end Jr II',
+    period: 'out 2022 — jan 2025',
+    role: 'Desenvolvedora Front-end Jr',
     company: 'Cromai',
     description:
-      'Plataforma de identificação de plantas daninhas com IA. Evolução de componentes e interfaces com React, TypeScript e Material UI.',
-  },
-  {
-    period: 'out 2022 — jul 2023',
-    role: 'Desenvolvedora Front-end Jr I',
-    company: 'Cromai',
-    description:
-      'Início da atuação na plataforma de agricultura de precisão. Desenvolvimento de interfaces com TypeScript e React.js.',
+      'Plataforma de identificação de plantas daninhas com IA. Desenvolvimento e evolução de interfaces com React, TypeScript e Material UI.',
   },
   {
     period: 'fev 2022 — out 2022',

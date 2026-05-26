@@ -28,7 +28,7 @@ export function Stack() {
                       key={j}
                       className="flex items-center gap-2.5 text-sm text-light-primary dark:text-dark-highlight"
                     >
-                      <div className="w-1 h-1 rounded-full bg-light-secondary/50 dark:bg-dark-highlight flex-shrink-0" />
+                      <div className="w-1 h-1 rounded-full bg-light-primary dark:bg-dark-primary flex-shrink-0" />
                       {item}
                     </li>
                   ))}

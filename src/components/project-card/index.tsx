@@ -70,7 +70,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           ))}
         </div>
 
-        <div className="flex gap-4 pt-1 border-t border-light-secondary/20 dark:border-dark-secondary/20 mt-1">
+        <div className="flex gap-4 pt-2 border-t border-light-secondary/20 dark:border-dark-secondary/20 mt-1">
           <a
             href={project.repo}
             target="_blank"

@@ -1,6 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Navbar } from './components/nav-bar';
-import { Socials } from './components/socials';
 import { projects } from './constants/projects';
 import { About } from './pages/about';
 import { Contact } from './pages/contact';
@@ -25,7 +24,6 @@ function App() {
         <Stack />
         <Contact />
         <Footer />
-        <Socials />
         <Toaster />
       </div>
     </QueryClientProvider>

@@ -3,22 +3,17 @@ export function Home() {
     <div id="home" className="bg-light-background dark:bg-dark-background min-h-screen flex flex-col border-b border-light-secondary/25 dark:border-dark-secondary/20">
       {/* Bloco de texto centralizado verticalmente */}
       <div className="container mx-auto px-6 flex-1 flex flex-col justify-center gap-5 md:gap-8 pt-24 pb-8">
-        <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary">
-          olá, me chamo
-        </p>
-
         <h1 className="font-serif leading-[0.85] text-[clamp(2.8rem,9.5vw,11rem)]">
           <span className="text-light-primary dark:text-dark-highlight">Giovana </span>
           <span className="italic text-light-secondary dark:text-dark-primary">Raphaelli.</span>
         </h1>
 
-        <div className="flex flex-col gap-3 border-t border-light-secondary/25 dark:border-dark-secondary/20 pt-4 max-w-lg">
-          <p className="text-xl md:text-2xl lg:text-3xl leading-snug font-serif text-light-primary dark:text-dark-highlight">
-            Construindo interfaces{' '}
+        <div className="flex flex-col gap-3 border-t border-light-secondary/25 dark:border-dark-secondary/20 pt-2 md:pt-4">
+          <p className="text-lg text-right md:text-3xl leading-snug font-serif text-light-primary dark:text-dark-highlight md:whitespace-nowrap">
+            transformando ideias em{' '}
             <em className="text-light-secondary dark:text-dark-primary">
-              intuitivas e performáticas
-            </em>{' '}
-            para times de produto.
+              experiências reais.
+            </em>
           </p>
         </div>
       </div>
@@ -26,16 +21,16 @@ export function Home() {
       {/* Cards + bottom bar fixos no rodapé */}
       <div className="container mx-auto px-6 pb-5 flex flex-col gap-3">
         <div className="grid grid-cols-1 md:grid-cols-3 border border-light-secondary/20 dark:border-dark-secondary/20 rounded-lg divide-y md:divide-y-0 md:divide-x divide-light-secondary/20 dark:divide-dark-secondary/20">
-          <div className="px-5 py-3">
-            <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary mb-1">localização</p>
+          <div className="px-3 py-1 md:px-5 md:py-3">
+            <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary md:mb-1">localização</p>
             <p className="font-serif text-light-primary dark:text-dark-highlight md:text-xl">São Paulo, BR</p>
           </div>
-          <div className="px-5 py-3">
-            <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary mb-1">foco</p>
+          <div className="px-3 py-1 md:px-5 md:py-3">
+            <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary md:mb-1">foco</p>
             <p className="font-serif text-light-primary dark:text-dark-highlight md:text-xl">Front-end</p>
           </div>
-          <div className="px-5 py-3">
-            <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary mb-1">experiência</p>
+          <div className="px-3 py-1 md:px-5 md:py-3">
+            <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary md:mb-1">experiência</p>
             <p className="font-serif text-light-primary dark:text-dark-highlight md:text-xl">+4 anos</p>
           </div>
         </div>

@@ -34,7 +34,7 @@ export function Contact() {
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] gap-4">
           {/* Coluna esquerda */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 mt-10 md:mt-0">
             {/* Status */}
             <div className="flex-1 rounded-2xl border border-light-secondary/20 dark:border-dark-secondary/20 p-5 flex flex-col gap-4">
               <div className="flex items-center justify-between">

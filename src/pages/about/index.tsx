@@ -15,21 +15,20 @@ export function About() {
           <div className="flex flex-col gap-6 h-full">
             <div className="flex flex-col gap-4 font-mono text-sm text-light-text dark:text-dark-text leading-relaxed">
               <p>
-                Sou desenvolvedora front-end com foco em criar interfaces intuitivas
+                Sou <span className="font-bold text-light-primary dark:text-dark-highlight">desenvolvedora front-end</span> com foco em criar interfaces intuitivas
                 e performáticas. Gosto de resolver problemas e aprimorar minhas
                 habilidades, sempre buscando novos desafios no mundo da tecnologia!
               </p>
               <p>
-                Minha trajetória começou em 2021, quando iniciei a faculdade de
-                Análise e Desenvolvimento de Sistemas e logo entrei no mercado,
-                evoluindo de Estagiária de Suporte de TI para Analista de
-                Desenvolvimento de Software.
+                Minha trajetória começou em 2021, quando iniciei a faculdade de{' '}
+                <span className="font-bold text-light-primary dark:text-dark-highlight">Análise e Desenvolvimento de Sistemas</span>{' '}
+                e logo entrei no mercado, evoluindo de Estagiária de Suporte de TI para Analista de Desenvolvimento de Software.
               </p>
               <p>
                 Ao longo do tempo, me especializei no desenvolvimento front-end,
-                trabalhando com aplicações escaláveis, testes e boas práticas.
-                Embora minha experiência seja principalmente em React, estou sempre
-                expandindo meu conhecimento e explorando novas tecnologias.
+                trabalhando com{' '}
+                <span className="font-bold text-light-primary dark:text-dark-highlight">aplicações escaláveis, testes e boas práticas</span>.
+                Embora minha experiência seja principalmente em React, estou sempre expandindo meu conhecimento e explorando novas tecnologias.
               </p>
             </div>
 
@@ -58,9 +57,9 @@ export function About() {
               oi
             </div>
             <img
-              src="eu.jpg"
+              src="eu.jpeg"
               alt="Giovana Raphaelli"
-              className="w-full h-[360px] md:h-[520px] object-cover object-left-bottom rounded-2xl"
+              className="w-full h-[360px] md:h-[520px] object-cover object-top rounded-2xl"
             />
             <div className="flex justify-between items-center mt-2 px-1 font-mono text-xs text-light-secondary dark:text-dark-secondary">
               <span>são paulo · 2026</span>

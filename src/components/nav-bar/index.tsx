@@ -66,10 +66,10 @@ export function Navbar() {
           </ul>
 
           <div className="flex items-center gap-3">
-            <div className="hidden md:flex items-center gap-2 px-2 rounded-full bg-light-accent dark:bg-dark-surface text-sm text-light-primary dark:text-dark-secondary py-0.5">
+            {/* <div className="hidden md:flex items-center gap-2 px-2 rounded-full bg-light-accent dark:bg-dark-surface text-sm text-light-primary dark:text-dark-secondary py-0.5">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-blink flex-shrink-0" />
               disponivel para projetos · {availabilityDate}
-            </div>
+            </div> */}
 
             <span className={`hidden md:flex w-9 h-9 items-center justify-center rounded-full ${borderClass} text-sm text-light-secondary dark:text-dark-secondary select-none`}>
               en
@@ -124,10 +124,10 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center justify-center gap-3 px-6 pb-10">
-            <div className="flex items-center gap-2 px-4 rounded-full bg-light-accent dark:bg-dark-surface text-sm text-light-primary dark:text-dark-secondary py-1">
+            {/* <div className="flex items-center gap-2 px-4 rounded-full bg-light-accent dark:bg-dark-surface text-sm text-light-primary dark:text-dark-secondary py-1">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-blink flex-shrink-0" />
               disponivel · {availabilityDate}
-            </div>
+            </div> */}
 
             <span className={`w-10 h-10 flex items-center justify-center rounded-full ${borderClass} text-sm text-light-secondary dark:text-dark-text select-none`}>
               en

@@ -21,7 +21,7 @@ export function Experience() {
               <div className="hidden md:grid md:grid-cols-[180px_1fr_1fr] gap-x-8 items-center">
                 {/* Bullet + Period */}
                 <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-light-primary dark:bg-dark-highlight flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-light-primary dark:bg-dark-primary flex-shrink-0" />
                   <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary leading-relaxed">
                     {exp.period}
                   </p>
@@ -45,7 +45,7 @@ export function Experience() {
               {/* Mobile layout */}
               <div className="md:hidden flex flex-col gap-2">
                 <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-light-primary dark:bg-dark-highlight flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-light-primary dark:bg-dark-primary flex-shrink-0" />
                   <p className="font-mono text-xs text-light-secondary dark:text-dark-secondary">
                     {exp.period}
                   </p>
