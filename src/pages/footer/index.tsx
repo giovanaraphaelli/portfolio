@@ -1,37 +1,14 @@
-import { MdEmail } from 'react-icons/md';
-import { FaLinkedin } from 'react-icons/fa';
-import { SiGithub } from 'react-icons/si';
-import { SocialLink } from '@/components/social-link';
-
 export function Footer() {
   return (
-    <div className="bg-light-surface dark:bg-dark-surface shadow-md'">
-      <div className="container mx-auto h-auto flex flex-col justify-center items-center gap-6 p-6">
-        <div className="flex gap-4">
-          <SocialLink
-            href="mailto:giovanaraphaelli@outlook.com"
-            icon={<MdEmail />}
-            label="E-mail"
-            variant="secondary"
-          />
-          <SocialLink
-            href="https://www.linkedin.com/in/giovanaraphaelli"
-            icon={<FaLinkedin />}
-            label="Linkedin"
-            variant="secondary"
-          />
-          <SocialLink
-            href="https://github.com/giovanaraphaelli"
-            icon={<SiGithub />}
-            label="Github"
-            variant="secondary"
-          />
-        </div>
-        <p className="text-mono text-sm text-light-text dark:text-dark-text">
-          desenvolvido com ❤️ por
-          <span className="font-bold"> @giovanaraphaelli</span>
-        </p>
+    <footer className="bg-light-background dark:bg-dark-background">
+      <div className="container mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-2">
+        <span className="font-mono text-xs text-light-secondary dark:text-dark-secondary">
+          giovana raphaelli.
+        </span>
+        <span className="font-mono text-xs text-light-secondary/50 dark:text-dark-secondary/50">
+          © {new Date().getFullYear()} · todos os direitos reservados
+        </span>
       </div>
-    </div>
+    </footer>
   );
 }
