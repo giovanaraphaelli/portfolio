@@ -57,13 +57,13 @@ export function About() {
               oi
             </div>
             <img
-              src="eu.jpeg"
+              src="eu_pb.png"
               alt="Giovana Raphaelli"
-              className="w-full h-[360px] md:h-[520px] object-cover object-top rounded-2xl"
+              className="w-full h-[360px] md:h-full object-cover object-start rounded-2xl"
             />
             <div className="flex justify-between items-center mt-2 px-1 font-mono text-xs text-light-secondary dark:text-dark-secondary">
               <span>são paulo · 2026</span>
-              <span>↳ isso sou eu</span>
+              <span>↳ essa sou eu</span>
             </div>
           </div>
         </div>

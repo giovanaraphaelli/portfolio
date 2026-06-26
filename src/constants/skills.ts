@@ -18,6 +18,6 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     label: 'aprendendo',
-    items: ['Inglês', 'CMS', 'WordPress', 'Elementor'],
+    items: ['Inglês', 'CMS'],
   },
 ];
